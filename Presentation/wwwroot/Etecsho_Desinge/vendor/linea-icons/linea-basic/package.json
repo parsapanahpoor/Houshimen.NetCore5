@@ -1,0 +1,102 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "@icon/linea-basic",
+        "scope": "@icon",
+        "escapedName": "@icon%2flinea-basic",
+        "name": "@icon/linea-basic",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "E:\\_OKLER\\Templates\\Porto\\HTML"
+    ]
+  ],
+  "_from": "@icon/linea-basic@latest",
+  "_hasShrinkwrap": false,
+  "_id": "@icon/linea-basic@1.0.0-alpha.2",
+  "_inCache": true,
+  "_integrity": "",
+  "_location": "/@icon/linea-basic",
+  "_nodeVersion": "10.9.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/linea-basic_1.0.0-alpha.2_1543935941792_0.49370475719698526"
+  },
+  "_npmUser": {
+    "name": "thecreation",
+    "email": "kaptinlin@thecreation.co"
+  },
+  "_npmVersion": "6.4.1",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "@icon/linea-basic",
+    "scope": "@icon",
+    "escapedName": "@icon%2flinea-basic",
+    "name": "@icon/linea-basic",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@icon/linea-basic/-/linea-basic-1.0.0-alpha.2.tgz",
+  "_shasum": "7aac3c9eb810ec715632b2d8e3852751e162e17c",
+  "_shrinkwrap": null,
+  "_spec": "@icon/linea-basic",
+  "_where": "E:\\_OKLER\\Templates\\Porto\\HTML",
+  "author": {
+    "name": "Dario Ferrando"
+  },
+  "bugs": {
+    "url": "https://github.com/thecreation/icons/issues"
+  },
+  "dependencies": {},
+  "description": "Linea Iconset a free outline iconset  featuring 730+ Icons.",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "integrity": "sha512-YHFl6SpYiO2yh6/5YN0ePxoX8o3EftLVypk2SQ3VnZy0yOAYHr4ps+rEeYZFfOQCyIfLZsZbIfhn81oXTkQGVQ==",
+    "shasum": "7aac3c9eb810ec715632b2d8e3852751e162e17c",
+    "tarball": "https://registry.npmjs.org/@icon/linea-basic/-/linea-basic-1.0.0-alpha.2.tgz",
+    "fileCount": 144,
+    "unpackedSize": 172553,
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcBpfGCRA9TVsSAnZWagAAbzUP/25Bq9GZ73yIhrU5kD2T\nMF8ceDv7EgtrANQDfyLGgCjXcQrC7W7XuQhtYwpRqPnVmXfYHFbAZQ5PndUr\n92KghC0bugYFJfNPCXFOZ+tSS7CvuO865A5LB2N+7t4TCvKje9pe7g2TaFwg\nOA6Wx8E0rrmBKrRHwJlsl2/d9Z+4hy4PXZS4Fa50OWlIqWChMcdn+EVbjfHa\n8z5NqRw0cxfEDi8Mf6M4JGeRIJb7sQ3qTt8tY69uHOEcg2wc7BbrOw+DK4dA\nlHCrGsL/ZEvr/lcS5teVV5Baaj3NSVX1Pvv+X4HXGsy4hk0dQOlpizD2vLNz\nbH2CGV6CsGold7fxnHu0w13pI5EChWUL+li9P7LbCftl3W2fRfRJcvHlSQdT\nQOlvO77ysbx8urAAQucF8r+7dVpwYskQS26Xpfps6CvG5guORCc0gijNyHkc\nCZ90IwIKMjjIUmp3mM31odGJWlulpOLYeB64X5vaa6b+b7TEzKPQe9mwyYjH\njgkeT3wPgflAN8uDR77Y+niUSOHBFAAerwIVbFnwxOfVws9oF3Wi9tcQO/jF\nvMKiUgzqKLNVY6yskPFhd+MCPo87e+lCZclrQLca80OEU3bbYw784Kd2Xwqd\nGDLyUiN+T2rhqheQK7HK3IRkP3kHGUO6/qMBXm0Pdlsay0aUwmI2syl2F2Yr\n+EkW\r\n=d6Te\r\n-----END PGP SIGNATURE-----\r\n"
+  },
+  "gitHead": "402a588256f35c114d566112c00d8ed0d2016904",
+  "homepage": "http://www.linea.io/",
+  "keywords": [
+    "icons",
+    "icon"
+  ],
+  "license": "CC0-1.0",
+  "maintainers": [
+    {
+      "name": "kaptinlin",
+      "email": "kaptinlin@gmail.com"
+    },
+    {
+      "name": "thecreation",
+      "email": "kaptinlin@thecreation.co"
+    }
+  ],
+  "name": "@icon/linea-basic",
+  "optionalDependencies": {},
+  "publishConfig": {
+    "access": "public"
+  },
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thecreation/icons/tree/master/modules/linea-basic"
+  },
+  "scripts": {
+    "import": "../../scripts/module/import --module=linea-basic",
+    "optimize": "../../scripts/module/optimize",
+    "update": "ncu -a"
+  },
+  "version": "1.0.0-alpha.2"
+}

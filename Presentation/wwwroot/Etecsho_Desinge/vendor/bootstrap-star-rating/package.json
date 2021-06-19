@@ -1,0 +1,100 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "bootstrap-star-rating",
+        "scope": null,
+        "escapedName": "bootstrap-star-rating",
+        "name": "bootstrap-star-rating",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "E:\\_OKLER\\Templates\\Porto\\HTML"
+    ]
+  ],
+  "_from": "bootstrap-star-rating@latest",
+  "_hasShrinkwrap": false,
+  "_id": "bootstrap-star-rating@4.0.4",
+  "_inCache": true,
+  "_location": "/bootstrap-star-rating",
+  "_nodeVersion": "10.9.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/bootstrap-star-rating_4.0.4_1537462973113_0.8724066893585374"
+  },
+  "_npmUser": {
+    "name": "kartik-v",
+    "email": "kartikv2@gmail.com"
+  },
+  "_npmVersion": "6.2.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "bootstrap-star-rating",
+    "scope": null,
+    "escapedName": "bootstrap-star-rating",
+    "name": "bootstrap-star-rating",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/bootstrap-star-rating/-/bootstrap-star-rating-4.0.4.tgz",
+  "_shasum": "93c8dac195e47e2a8d4e084112fea9a4d9ca1d3f",
+  "_shrinkwrap": null,
+  "_spec": "bootstrap-star-rating",
+  "_where": "E:\\_OKLER\\Templates\\Porto\\HTML",
+  "author": {
+    "name": "Kartik Visweswaran",
+    "email": "kartikv2@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/kartik-v/bootstrap-star-rating/issues"
+  },
+  "dependencies": {},
+  "description": "A simple yet powerful JQuery star rating plugin for Bootstrap.",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "integrity": "sha512-/mIsyg5jGeVAgG3tycJPKzznyIeeVon6oxnzaraiHQDypRRWnWHb7QUMS0heFZELa8TIISqI0n0tGV/zurkw9g==",
+    "shasum": "93c8dac195e47e2a8d4e084112fea9a4d9ca1d3f",
+    "tarball": "https://registry.npmjs.org/bootstrap-star-rating/-/bootstrap-star-rating-4.0.4.tgz",
+    "fileCount": 48,
+    "unpackedSize": 133696,
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJbo9K9CRA9TVsSAnZWagAAp+0P/2hrdiWbKni3/cVCBwBo\npncGQ8mOY4zgi9LW4dCS6IfkqbdhJEr5krPHoOx2pNpRnkIFobeMrUVc30Yi\nfxDnE3YPPKwJnZD1N+KhfJA2X00Fb6OG/RDz2jQgp27xXokfvjy1XR4KNK5e\nalhbj9NujTvsn03B23bq5PE/zvU7feoDwvDSsc1kPTKXzsO+NYGcJQzqxk5q\n7ev3Nk1QWFAe7wQMT539Cn0O/A+cj4ILxJPflOXpec/ntqqfADCt5i0XZ6uZ\noNGHr6rR7a31tVQP/ow1HWQ+/5aG02TCjzm/T7DIjBiHrQqP75y+Xu6bU4BA\nNC7R6FW66hUNJvGFV8fah7GwgYsTY89Ea6WeprlI4SXZ5Wl7WL9TTfF7Knjm\nK7/T6hOsX+X/NfsEC9TPoAMk3GmJ1bYVXBOf02dqhMTLF/uEACskIP3Y6Mu3\n7uBsUZPl+Xi6b1LQ3H9/xRgu5FxMIiXlVB/YTz7gMOznvBFa+mTc4YOoXUPV\nhudLRFdEpO/+ECed+a1qKiVfZNLxOnDHfpwY04Sr7W4zk5Sb4+dNL/wc4MOh\nl5F1GM6ka76SeJMsG36itT8W2myLKA+P+mww4uKZyr5lVG2nh/Yn6aLyDnZ4\nVUh5e0pOEkSdyyH5kWautyYOcXx93e4gdoYW/1fXzqIWgVh9i21G0fki8Y4f\np+OV\r\n=C20q\r\n-----END PGP SIGNATURE-----\r\n"
+  },
+  "gitHead": "67b2fbcb2d1a42a843d6798c7078c4f776d75664",
+  "homepage": "https://github.com/kartik-v/bootstrap-star-rating",
+  "keywords": [
+    "bootstrap",
+    "star",
+    "rating",
+    "font",
+    "awesome",
+    "glyphicon",
+    "svg"
+  ],
+  "license": "BSD-3-Clause",
+  "main": "js/star-rating.min.js",
+  "maintainers": [
+    {
+      "name": "kartik-v",
+      "email": "kartikv2@gmail.com"
+    }
+  ],
+  "name": "bootstrap-star-rating",
+  "optionalDependencies": {},
+  "peerDependencies": {
+    "jquery": ">= 1.9.0",
+    "bootstrap": "~3"
+  },
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kartik-v/bootstrap-star-rating.git"
+  },
+  "version": "4.0.4"
+}

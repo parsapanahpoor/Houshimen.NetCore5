@@ -1,0 +1,102 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "@icon/linea-software",
+        "scope": "@icon",
+        "escapedName": "@icon%2flinea-software",
+        "name": "@icon/linea-software",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "E:\\_OKLER\\Templates\\Porto\\HTML"
+    ]
+  ],
+  "_from": "@icon/linea-software@latest",
+  "_hasShrinkwrap": false,
+  "_id": "@icon/linea-software@1.0.0-alpha.2",
+  "_inCache": true,
+  "_integrity": "",
+  "_location": "/@icon/linea-software",
+  "_nodeVersion": "10.9.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/linea-software_1.0.0-alpha.2_1543935947286_0.506635452770021"
+  },
+  "_npmUser": {
+    "name": "thecreation",
+    "email": "kaptinlin@thecreation.co"
+  },
+  "_npmVersion": "6.4.1",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "@icon/linea-software",
+    "scope": "@icon",
+    "escapedName": "@icon%2flinea-software",
+    "name": "@icon/linea-software",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@icon/linea-software/-/linea-software-1.0.0-alpha.2.tgz",
+  "_shasum": "6203a40bd8f7b37e26798abe544062cd2a13557f",
+  "_shrinkwrap": null,
+  "_spec": "@icon/linea-software",
+  "_where": "E:\\_OKLER\\Templates\\Porto\\HTML",
+  "author": {
+    "name": "Dario Ferrando"
+  },
+  "bugs": {
+    "url": "https://github.com/thecreation/icons/issues"
+  },
+  "dependencies": {},
+  "description": "Linea Iconset a free outline iconset  featuring 730+ Icons.",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "integrity": "sha512-XQyGfSYe5Z1OQDv0BUViGnS63MlH9sgvObjSLFd3T0F3pq3JXkiHgsvGgnsi+AdEI1ACkPyJ3qg4qf7fcAXRsg==",
+    "shasum": "6203a40bd8f7b37e26798abe544062cd2a13557f",
+    "tarball": "https://registry.npmjs.org/@icon/linea-software/-/linea-software-1.0.0-alpha.2.tgz",
+    "fileCount": 109,
+    "unpackedSize": 133000,
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcBpfMCRA9TVsSAnZWagAAo0IP/iQDVGOHgucQZjJ6ns/X\nRfMHFVCn8itaetrrtxDPNxteXFPFA0uBeuBdpytPsERf8tI3DZjf3AGBwuZ5\nxAiZaERLBXE9aHQ5xNEv9sIeLOn1cOnajQNEVkcdmPGHoyIpYzDVyvKiRG2D\nRnpmX92Vhh/SanNoni0tAWf9xO4a/MI3WdwssWllMgUSPFHU4HVjiRtbUFeW\n970lnFqekzxQ2ITmPn28g527afEalDERVZnnNTIHS9QtmdxnT+Iq6itngacZ\nVh6EkwpyB0L89WkfVBSwf69r8uRD0LFpNhn9A8SnS0UPjGt7MdMq8AlgLK1o\nt9ABsygj+eprTZEbQJY/uIzmVhIYK8cLlv7C2oWKubPKwjVcegbReiAXWZnC\nXlnmmCSzc++TDdawndCIiFj3e8IOcNlPGiPZPy042QctZFDunLqgVkbifJ78\nVG4DuXdKVknmS0LQ5x8dC64wnThadN2KpYUwKejzq2Y6QTkAZo8HMWmZX5hm\naUxCb2jzBSyTVwkR6CN6+CW1Bly2Pg2rl3dZBsUf4wAi5s7nVCzfV4ChFcnT\nfhTyu3RKYMmUdQH1MJnR4iDCCbb2c9PKB1XBNTObgVrhGTWHcMZ43Oe3yUYG\nvquDWDGuyYWY4ywR47CS1kEDTngzncIllN3/5XvTgRmo9Pf+CymS5uKxMXbU\ngg21\r\n=mNVg\r\n-----END PGP SIGNATURE-----\r\n"
+  },
+  "gitHead": "402a588256f35c114d566112c00d8ed0d2016904",
+  "homepage": "http://www.linea.io/",
+  "keywords": [
+    "icons",
+    "icon"
+  ],
+  "license": "CC0-1.0",
+  "maintainers": [
+    {
+      "name": "kaptinlin",
+      "email": "kaptinlin@gmail.com"
+    },
+    {
+      "name": "thecreation",
+      "email": "kaptinlin@thecreation.co"
+    }
+  ],
+  "name": "@icon/linea-software",
+  "optionalDependencies": {},
+  "publishConfig": {
+    "access": "public"
+  },
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thecreation/icons/tree/master/modules/linea-software"
+  },
+  "scripts": {
+    "import": "../../scripts/module/import --module=linea-software",
+    "optimize": "../../scripts/module/optimize",
+    "update": "ncu -a"
+  },
+  "version": "1.0.0-alpha.2"
+}

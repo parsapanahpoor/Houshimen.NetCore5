@@ -1,0 +1,265 @@
+/* Animations */
+.appear-animation {
+	opacity: 0;
+}
+
+.appear-animation-visible {
+	opacity: 1;
+}
+
+/* Transitions */
+.transition-2ms {
+	transition: all 0.2s ease-in-out;
+}
+
+/* Mask Up */
+@keyframes maskUp {
+	from {
+	    transform: translate(0, 100%);
+	}
+
+	to {
+	    transform: translate(0, 0);
+	}
+}
+
+/* Mask Right */
+@keyframes maskRight {
+	from {
+	    transform: translate(-100%, 0);
+	}
+
+	to {
+	    transform: translate(0, 0);
+	}
+}
+
+/* Mask Down */
+@keyframes maskDown {
+	from {
+	    transform: translate(0, -100%);
+	}
+
+	to {
+	    transform: translate(0, 0);
+	}
+}
+
+/* Mask Left */
+@keyframes maskLeft {
+	from {
+	    transform: translate(100%, 0);
+	}
+
+	to {
+	    transform: translate(0, 0);
+	}
+}
+
+.maskUp {
+	animation-name: maskUp;
+}
+
+.maskRight {
+	animation-name: maskRight;
+}
+
+.maskDown {
+	animation-name: maskDown;
+}
+
+.maskLeft {
+	animation-name: maskLeft;
+}
+
+// Header Effect - Reveal
+@keyframes headerReveal {
+	from {
+		top: -150px;
+	}	
+	to {
+		top: 0;
+	}
+}
+
+/* Fade In Up Shorter */
+@keyframes fadeInUpShorter {
+	from {
+	    opacity: 0;
+	    transform: translate(0, 50px);
+	}
+
+	to {
+		opacity: 1;
+		transform: none;
+	}
+}
+
+.fadeInUpShorter {
+	animation-name: fadeInUpShorter;
+}
+
+/* Fade In Left Shorter */
+@keyframes fadeInLeftShorter {
+	from {
+	    opacity: 0;
+	    transform: translate(50px, 0);
+	}
+
+	to {
+	    opacity: 1;
+	    transform: none;
+	}
+}
+
+.fadeInLeftShorter {
+	animation-name: fadeInLeftShorter;
+}
+
+/* Fade In Right Shorter */
+@keyframes fadeInRightShorter {
+	from {
+	    opacity: 0;
+	    transform: translate(-50px, 0);
+	}
+
+	to {
+	    opacity: 1;
+	    transform: none;
+	}
+}
+
+.fadeInRightShorter {
+	animation-name: fadeInRightShorter;
+}
+
+/* Fade In Down Shorter */
+@keyframes fadeInDownShorter {
+	from {
+	    opacity: 0;
+	    transform: translate(0, -50px);
+	}
+
+	to {
+	    opacity: 1;
+	    transform: none;
+	}
+}
+
+.fadeInDownShorter {
+	animation-name: fadeInDownShorter;
+}
+
+/* Expand In */
+@keyframes expandIn {
+	from {
+	    opacity: 0;
+	    transform: scale(0.8);
+	}
+
+	to {
+	    opacity: 1;
+	    transform: scale(1);
+	}
+}
+
+.expandIn {
+	animation-name: expandIn;
+}
+
+
+/* Gradient Transition */
+@keyframes gradientTransition {
+	0% {
+		background-position:0% 50%
+	}
+    50% {
+    	background-position:100% 50%
+    }
+    100% {
+    	background-position:0% 50%
+    }
+}
+
+/* Slider Scroll Button Animation */
+@keyframes sliderScrollButton {
+	0% {
+		opacity: 1;
+		transform: translate3d(-50%, 0, 0);
+	}
+
+	70% {
+		opacity: 1;
+		transform: translate3d(-50%, 10px, 0);
+	}
+
+	100% {
+		opacity: 0;
+		transform: translate3d(-50%, 10px, 0);
+	}
+}
+
+/* Arrow Left Right */
+@keyframes arrowLeftRight {
+	0% {
+		transform: translate3d(-1px, 0, 0);
+	}
+
+	50% {
+		transform: translate3d(1px, 0, 0);
+	}
+
+	100% {
+		transform: translate3d(-1px, 0, 0);
+	}
+}
+
+/* Nav Item Arrow */
+@keyframes navItemArrow {
+	0% {
+		position: relative;
+		#{$left}: -1px;
+	}
+	50% {
+		position: relative;
+		#{$left}: 3px;
+	}
+	100% {
+		position: relative;
+		#{$left}: -1px;
+	}
+}
+
+/* Hover 3d Effect */
+.hover-in {
+	transition: .1s ease-out !important;
+}
+
+.hover-out {
+	transition: .1s ease-in !important;
+}
+
+.hover-3d {
+	transition: none;
+}
+
+/* Hotspot */
+@keyframes hotspot-pulsate {
+	0% {
+		transform: scale(1);
+		opacity:0.8;
+	}
+	45% {
+		transform: scale(1.75);
+		opacity:0;
+	}
+}
+@keyframes stop-hotspot-pulsate {
+	from {
+		opacity:0.4;
+	}
+	to {
+		transform: scale(2);
+		opacity:0;
+	}
+}

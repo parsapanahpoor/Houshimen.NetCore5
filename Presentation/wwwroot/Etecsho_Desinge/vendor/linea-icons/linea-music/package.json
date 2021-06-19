@@ -1,0 +1,102 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "@icon/linea-music",
+        "scope": "@icon",
+        "escapedName": "@icon%2flinea-music",
+        "name": "@icon/linea-music",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "E:\\_OKLER\\Templates\\Porto\\HTML"
+    ]
+  ],
+  "_from": "@icon/linea-music@latest",
+  "_hasShrinkwrap": false,
+  "_id": "@icon/linea-music@1.0.0-alpha.2",
+  "_inCache": true,
+  "_integrity": "",
+  "_location": "/@icon/linea-music",
+  "_nodeVersion": "10.9.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/linea-music_1.0.0-alpha.2_1543935943291_0.4516433329310854"
+  },
+  "_npmUser": {
+    "name": "thecreation",
+    "email": "kaptinlin@thecreation.co"
+  },
+  "_npmVersion": "6.4.1",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "@icon/linea-music",
+    "scope": "@icon",
+    "escapedName": "@icon%2flinea-music",
+    "name": "@icon/linea-music",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@icon/linea-music/-/linea-music-1.0.0-alpha.2.tgz",
+  "_shasum": "ae401dfe5560f70d8fe7b0711014fa428ce5339e",
+  "_shrinkwrap": null,
+  "_spec": "@icon/linea-music",
+  "_where": "E:\\_OKLER\\Templates\\Porto\\HTML",
+  "author": {
+    "name": "Dario Ferrando"
+  },
+  "bugs": {
+    "url": "https://github.com/thecreation/icons/issues"
+  },
+  "dependencies": {},
+  "description": "Linea Iconset a free outline iconset  featuring 730+ Icons.",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "integrity": "sha512-b81fCzhQA3MBKjhm4f4iBIbtAFFEZDU7PJ7csg7mZpiGOD2AABbTHIini2s9QOnLOZRWJB7k5rvcgOJyYT5aKw==",
+    "shasum": "ae401dfe5560f70d8fe7b0711014fa428ce5339e",
+    "tarball": "https://registry.npmjs.org/@icon/linea-music/-/linea-music-1.0.0-alpha.2.tgz",
+    "fileCount": 39,
+    "unpackedSize": 54464,
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcBpfHCRA9TVsSAnZWagAALU8P/Rd5DSiG1z5Ow9sxRTzC\ngYObV0YbIP4GmUaMQchN9cNjPPGs26YTBGKd4Tdk2gCWPuhrVmAr3Y7awX4i\nOMAq5xIAxYI7PLRP5JJ4yHZl9XVrMvt0c3c1ierHgyzxo+ueiboZUarzCuh7\nJIncOYqy1LxHyrKMaHsGFF7HQQYUhvpbqs58Iy8yh1uAEonhRxIgfE/O+OQX\n9llL00/hQhN1px6DAP6HcaO2+MgwAiN8nRJ92nA978LNnJpwEg+7C8W/RVba\neU5sN8AAVo3S7ouV1oZIZpiaASwsUDuxH7ezDWxWtx8Oo1i4HAqmpi4SVcPv\n5hM8RjJclbhqQpRZ2qu64E11MKaZvSk6YLwjjLR6rzsqoUNiAIlghDXazG0Z\ntVnTWfyqB6luRoPyhn7NaaGE+FkApNq4avWy6r5P+SzXntNih9BND7/FN+C/\nbRxU4sdqjf9PGWqUA1PDZGiDSOgK4TDzokJ7vAjAADXjcsRXKC9JUysk3FnE\nHmXGN3W1YyTfhmL0ZPZ2zDq0C1qVWrA09ylLbuHqzFsVp3fNH8YIlu4sv6dk\nPZe9WGMbosACYkf0P2IYrT9tKj9UUdsfLDShWJvWzE9WN7RyHZ4e5ETGmh2w\nSxRl9NddAX3G30xg2boS0zipdigkd/sn9PFK3O2lY7d3Qfg0FRMfgaWmr+kO\n2Mfg\r\n=2r0R\r\n-----END PGP SIGNATURE-----\r\n"
+  },
+  "gitHead": "402a588256f35c114d566112c00d8ed0d2016904",
+  "homepage": "http://www.linea.io/",
+  "keywords": [
+    "icons",
+    "icon"
+  ],
+  "license": "CC0-1.0",
+  "maintainers": [
+    {
+      "name": "kaptinlin",
+      "email": "kaptinlin@gmail.com"
+    },
+    {
+      "name": "thecreation",
+      "email": "kaptinlin@thecreation.co"
+    }
+  ],
+  "name": "@icon/linea-music",
+  "optionalDependencies": {},
+  "publishConfig": {
+    "access": "public"
+  },
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thecreation/icons/tree/master/modules/linea-music"
+  },
+  "scripts": {
+    "import": "../../scripts/module/import --module=linea-music",
+    "optimize": "../../scripts/module/optimize",
+    "update": "ncu -a"
+  },
+  "version": "1.0.0-alpha.2"
+}

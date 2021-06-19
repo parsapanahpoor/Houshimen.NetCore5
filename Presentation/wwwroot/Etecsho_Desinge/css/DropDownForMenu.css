@@ -1,0 +1,17 @@
+﻿.navbar {
+    display: flow-root !important;
+}
+
+aside ul.nav-list > li > a {
+    text-align: right;
+}
+
+ul.nav-list li a {
+    padding: 8px 7px 8px 22px !important;
+    text-align: right;
+}
+
+.dropdown_def a:before {
+    top: 15px !important;
+}
+

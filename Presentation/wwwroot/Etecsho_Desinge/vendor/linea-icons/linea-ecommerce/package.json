@@ -1,0 +1,102 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "@icon/linea-ecommerce",
+        "scope": "@icon",
+        "escapedName": "@icon%2flinea-ecommerce",
+        "name": "@icon/linea-ecommerce",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "E:\\_OKLER\\Templates\\Porto\\HTML"
+    ]
+  ],
+  "_from": "@icon/linea-ecommerce@latest",
+  "_hasShrinkwrap": false,
+  "_id": "@icon/linea-ecommerce@1.0.0-alpha.2",
+  "_inCache": true,
+  "_integrity": "",
+  "_location": "/@icon/linea-ecommerce",
+  "_nodeVersion": "10.9.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/linea-ecommerce_1.0.0-alpha.2_1543935943145_0.35725240905234745"
+  },
+  "_npmUser": {
+    "name": "thecreation",
+    "email": "kaptinlin@thecreation.co"
+  },
+  "_npmVersion": "6.4.1",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "@icon/linea-ecommerce",
+    "scope": "@icon",
+    "escapedName": "@icon%2flinea-ecommerce",
+    "name": "@icon/linea-ecommerce",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@icon/linea-ecommerce/-/linea-ecommerce-1.0.0-alpha.2.tgz",
+  "_shasum": "ce96be35833e8f2ad2c6286aaa10bdab3b159544",
+  "_shrinkwrap": null,
+  "_spec": "@icon/linea-ecommerce",
+  "_where": "E:\\_OKLER\\Templates\\Porto\\HTML",
+  "author": {
+    "name": "Dario Ferrando"
+  },
+  "bugs": {
+    "url": "https://github.com/thecreation/icons/issues"
+  },
+  "dependencies": {},
+  "description": "Linea Iconset a free outline iconset  featuring 730+ Icons.",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "integrity": "sha512-5zP/fz5GX6YRdLyJPP3ZA4xkaeIcu4UJNSUnLMniWh4heXfw7R1JnJGfSUFr6RdFSX97urI88AJXNK8jLLelLw==",
+    "shasum": "ce96be35833e8f2ad2c6286aaa10bdab3b159544",
+    "tarball": "https://registry.npmjs.org/@icon/linea-ecommerce/-/linea-ecommerce-1.0.0-alpha.2.tgz",
+    "fileCount": 94,
+    "unpackedSize": 132126,
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcBpfHCRA9TVsSAnZWagAAD4oP/2jvfHMgj14U2QK+C/9X\nmIQjv0KfWCPnVHvHA3dxpuvelpbpAFiKLJAC/I0T9wWxzf3Cs4PGIAfCyKRs\nTkWAbu6X9EB5PcpoD3P0DDh0oJ9uYEsnr8B6ipVRXDC28J/2mluEV3H9SWZ7\nXLBeWxltBUONpKW+PmwA0uKmEhaTUrXAf/gnD0PeYcLzAnt8hOYjORChhyqM\n6H9fC7kOF6MC7G/2KLaTnp7NbOobjQZn2lt26aA6DQEt0yiEdyBurM9cScvB\n+db9/EIyyEDoyWGCJj3rW4+NR7dNQtwlMZglWCFv8kbmkKO15MxhUyGt9HRT\nWmlMl+0yoLs6CyIKGiARZlajjK3+1OZIuEw1WDUVJnLnYOp/UMtwTSiXes2q\nuuZIAfL7PUvzaH11Grceh4j9iuBNksxn+u48BrJL3OtOlBmUyANg5NqlV1jW\nFwOAaVxQWH/xj/by83xWvjAtCM3vV66XeNxaQLHgAGkk1XRW0QVgTefzp8A+\nHXwc7pgHshualHl1FavV0R+/Sn46h6WFE2Qz3izqvCDFTBQyNbMANbVNVpou\nUkN7XDgECcCUVqqyb/o5Y0eqBOOa6uu8ybLee87jWo6pVC6nWQwf1f8lWpLf\nhLidYlzmARMntTS+hY5TNyZvq/kQXXNsCHYbF2WLRjj66WsF09Nh5IEeplRN\nfu17\r\n=7Tx+\r\n-----END PGP SIGNATURE-----\r\n"
+  },
+  "gitHead": "402a588256f35c114d566112c00d8ed0d2016904",
+  "homepage": "http://www.linea.io/",
+  "keywords": [
+    "icons",
+    "icon"
+  ],
+  "license": "CC0-1.0",
+  "maintainers": [
+    {
+      "name": "kaptinlin",
+      "email": "kaptinlin@gmail.com"
+    },
+    {
+      "name": "thecreation",
+      "email": "kaptinlin@thecreation.co"
+    }
+  ],
+  "name": "@icon/linea-ecommerce",
+  "optionalDependencies": {},
+  "publishConfig": {
+    "access": "public"
+  },
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thecreation/icons/tree/master/modules/linea-ecommerce"
+  },
+  "scripts": {
+    "import": "../../scripts/module/import --module=linea-ecommerce",
+    "optimize": "../../scripts/module/optimize",
+    "update": "ncu -a"
+  },
+  "version": "1.0.0-alpha.2"
+}

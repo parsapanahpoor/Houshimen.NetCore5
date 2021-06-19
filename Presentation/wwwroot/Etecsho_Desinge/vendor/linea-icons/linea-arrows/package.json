@@ -1,0 +1,102 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "@icon/linea-arrows",
+        "scope": "@icon",
+        "escapedName": "@icon%2flinea-arrows",
+        "name": "@icon/linea-arrows",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "E:\\_OKLER\\Templates\\Porto\\HTML"
+    ]
+  ],
+  "_from": "@icon/linea-arrows@latest",
+  "_hasShrinkwrap": false,
+  "_id": "@icon/linea-arrows@1.0.0-alpha.2",
+  "_inCache": true,
+  "_integrity": "",
+  "_location": "/@icon/linea-arrows",
+  "_nodeVersion": "10.9.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/linea-arrows_1.0.0-alpha.2_1543935938297_0.11697490069044503"
+  },
+  "_npmUser": {
+    "name": "thecreation",
+    "email": "kaptinlin@thecreation.co"
+  },
+  "_npmVersion": "6.4.1",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "@icon/linea-arrows",
+    "scope": "@icon",
+    "escapedName": "@icon%2flinea-arrows",
+    "name": "@icon/linea-arrows",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@icon/linea-arrows/-/linea-arrows-1.0.0-alpha.2.tgz",
+  "_shasum": "b7922cee3b9e571f21b4da944f84d760570bf44e",
+  "_shrinkwrap": null,
+  "_spec": "@icon/linea-arrows",
+  "_where": "E:\\_OKLER\\Templates\\Porto\\HTML",
+  "author": {
+    "name": "Dario Ferrando"
+  },
+  "bugs": {
+    "url": "https://github.com/thecreation/icons/issues"
+  },
+  "dependencies": {},
+  "description": "Linea Iconset a free outline iconset  featuring 730+ Icons.",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "integrity": "sha512-ECiu+tbH/PcRXSA2qISreNnV/nS7B0MUYK2COg7eGIkrOedfkzfjxWgwY5bJ0E/5D1pbPcpcMBhp2Z5DBihixg==",
+    "shasum": "b7922cee3b9e571f21b4da944f84d760570bf44e",
+    "tarball": "https://registry.npmjs.org/@icon/linea-arrows/-/linea-arrows-1.0.0-alpha.2.tgz",
+    "fileCount": 145,
+    "unpackedSize": 150695,
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcBpfCCRA9TVsSAnZWagAA8BIP/RZy7B9g2sw0WZkBgAXk\nbbQIAVreOhiotcyEuE66JsUWW0AO9G6dQlB2dWPKYHiQDNH+A46nU7b7EYdN\n/2YrldqP7hJlg/Q0zUIj9IE+rxlwdh7h1z8J9N5SnPSBRudMCNe0z8/QzVEH\n7vzlQIkwEzfEGIIuR+8ynDec2V3HLj+8piHmQ4AOlmbGAxgSMO5T4j2b9wVq\njI+Vg66xTr2vqyNzoqiLV5pZKMlZqFTJHuRzay2498AJrYjtxkKy2ETDZq2i\njtUbxw138CvW2xhU+bLLvpGIDz23p60IaZlBJEexwNJ6fJ2b8v5GIBno/D+x\necSsl6pJWA+0PaKVWtQXMeAJgzkZQuUR6maDkXMtYxbR59GqAQWJhpG1ify0\nzTHe/E1gQO9dvuMAod/vRmXt4tsfTWIP5RjXA/mm1jaQbD+sK4BD5MQUqO+Z\nmRyYgOgE4kJ9jqWxy/9jG1SX6PZsRpPVRsGDtHSP1Elbh8ELanZ6UWF0p7rY\nD+b2S/XDtsXqiwwfipfPjU8BhJ97hdw97GpaykrLzwmJeb/Jh0JhslopizEY\nC5q0oWr4fjTtiBsbnxyTixoJgRpMAJIYQbt+oacUCWJj+PY6EoD56PqGLonb\nkFy+mJdBY0ak90v+cugUqWU2BUQKkX+AKAooMja5nxH5Og6sRP5dnGfFBMQD\n7Pg1\r\n=iu4/\r\n-----END PGP SIGNATURE-----\r\n"
+  },
+  "gitHead": "402a588256f35c114d566112c00d8ed0d2016904",
+  "homepage": "http://www.linea.io/",
+  "keywords": [
+    "icons",
+    "icon"
+  ],
+  "license": "CC0-1.0",
+  "maintainers": [
+    {
+      "name": "kaptinlin",
+      "email": "kaptinlin@gmail.com"
+    },
+    {
+      "name": "thecreation",
+      "email": "kaptinlin@thecreation.co"
+    }
+  ],
+  "name": "@icon/linea-arrows",
+  "optionalDependencies": {},
+  "publishConfig": {
+    "access": "public"
+  },
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thecreation/icons/tree/master/modules/linea-arrows"
+  },
+  "scripts": {
+    "import": "../../scripts/module/import --module=linea-arrows",
+    "optimize": "../../scripts/module/optimize",
+    "update": "ncu -a"
+  },
+  "version": "1.0.0-alpha.2"
+}

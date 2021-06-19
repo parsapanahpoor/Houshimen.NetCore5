@@ -1,0 +1,134 @@
+/* Add here all your CSS customizations */
+/* @font-face {
+    font-family: 'Open Sans';
+    src: url('http://mincdn.ir/font/Vazir/Vazir.eot');
+    src: url('http://mincdn.ir/font/Vazir/vazir.woff') format('woff'),
+         url('http://mincdn.ir/font/Vazir/vazir.ttf') format('truetype');
+    font-weight: normal;
+  } */
+.br-s{
+    padding: 10px 15px !important;
+    min-height: 0 !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 0;
+    text-decoration: none;
+}
+.testimonial blockquote p{
+    font-family: Vazir;
+    text-align: right;
+}
+.br-s:hover{
+    text-decoration: none;
+}
+#header .header-logo img {
+    width: 100%;
+    height: 100%;
+}
+.paddingt-4{
+   
+        padding-top: 4rem!important;
+  
+}
+.txc{
+    text-align: center;
+}
+.txr{
+    text-align: right;
+}
+.displayf{
+    display: flex;
+}
+.txj{
+    text-align: justify;
+ direction: rtl;
+}
+.diflo {
+    direction: rtl;
+    float: right;
+}
+.dirrtl{
+    direction: rtl;
+}
+.txrtop{
+    text-align: right;
+    margin-top: 10px;
+}
+.flot{
+    float: right;
+   margin-top: 10px;
+}
+.txtdir{
+    direction: rtl;
+    text-align: right;
+}
+ /* .featured-box .box-content:not(.box-content-border-0) {
+
+ 
+} */
+/* .shop table.cart th{
+    text-align: center;
+}*/
+.shop table.cart td{
+    text-align: center;
+}
+.shop table.cart .product-thumbnail {
+    width: 15%!important;
+}
+.toggle.toggle-simple .toggle > label:before {
+    right:9px!important;
+    left:auto!important;
+}
+.toggle.toggle-simple .toggle > label:after {
+    right:0!important;
+    left: auto!important;
+}
+.toggle.toggle-simple .toggle > label{
+    padding-right: 32px;
+}
+.mark-me{
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    padding: 4px;
+    font-size: 0.8em;
+    line-height: 1.3; 
+    margin-left: 10px;
+    color: #2B4AFF;
+    border-color: #2B4AFF;
+}
+.text-primary{
+    text-align: right;
+    padding-right: 0.25rem;
+}
+.pr-4{
+    text-align: right;
+}
+.margin10{
+    margin-left: 10px;
+}
+.social-icons{
+    float: right;
+}
+.txcim{
+    text-align: center!important;
+}
+.owl-carousel.dots-title .owl-dots {
+    position: absolute;
+    margin-top: 0 !important;
+    top: -51px;
+    /* left: 264px; */
+    right: 193px;
+}
+@media (min-width: 992px){
+.pb-lg-5, .py-lg-5 {
+    padding-bottom: 0rem!important;
+}
+}
+@media (min-width: 992px){
+html.side-header #header.side-header .header-logo {
+    margin: 1rem 0!important;
+}
+}

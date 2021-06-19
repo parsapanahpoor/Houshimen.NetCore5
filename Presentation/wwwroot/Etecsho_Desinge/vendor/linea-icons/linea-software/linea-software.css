@@ -1,0 +1,332 @@
+/**
+ * Linea software, 1.0.0
+ * Created by Dario Ferrando
+ * http://www.linea.io/
+ * CC0-1.0 License
+ */
+@charset "UTF-8";
+
+@font-face {
+	font-family: "linea-software";
+	src: url('linea-software.eot');
+	src: url('linea-software.eot?#iefix') format('eot'),
+
+		url('linea-software.woff') format('woff'),
+		url('linea-software.ttf') format('truetype'),
+		url('linea-software.svg#linea-software') format('svg');
+}
+
+.lso {
+	font-family: "linea-software";
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	speak: none;
+	text-decoration: none;
+	text-transform: none;
+}
+
+
+.lso-software-add-vectorpoint:before {
+	content: "a";
+}
+.lso-software-box-oval:before {
+	content: "b";
+}
+.lso-software-box-polygon:before {
+	content: "c";
+}
+.lso-software-box-rectangle:before {
+	content: "d";
+}
+.lso-software-box-roundedrectangle:before {
+	content: "e";
+}
+.lso-software-character:before {
+	content: "f";
+}
+.lso-software-crop:before {
+	content: "g";
+}
+.lso-software-eyedropper:before {
+	content: "h";
+}
+.lso-software-font-allcaps:before {
+	content: "i";
+}
+.lso-software-font-baseline-shift:before {
+	content: "j";
+}
+.lso-software-font-horizontal-scale:before {
+	content: "k";
+}
+.lso-software-font-kerning:before {
+	content: "l";
+}
+.lso-software-font-leading:before {
+	content: "m";
+}
+.lso-software-font-size:before {
+	content: "n";
+}
+.lso-software-font-smallcapital:before {
+	content: "o";
+}
+.lso-software-font-smallcaps:before {
+	content: "p";
+}
+.lso-software-font-strikethrough:before {
+	content: "q";
+}
+.lso-software-font-tracking:before {
+	content: "r";
+}
+.lso-software-font-underline:before {
+	content: "s";
+}
+.lso-software-font-vertical-scale:before {
+	content: "t";
+}
+.lso-software-horizontal-align-center:before {
+	content: "u";
+}
+.lso-software-horizontal-align-left:before {
+	content: "v";
+}
+.lso-software-horizontal-align-right:before {
+	content: "w";
+}
+.lso-software-horizontal-distribute-center:before {
+	content: "x";
+}
+.lso-software-horizontal-distribute-left:before {
+	content: "y";
+}
+.lso-software-horizontal-distribute-right:before {
+	content: "z";
+}
+.lso-software-indent-firstline:before {
+	content: "A";
+}
+.lso-software-indent-left:before {
+	content: "B";
+}
+.lso-software-indent-right:before {
+	content: "C";
+}
+.lso-software-lasso:before {
+	content: "D";
+}
+.lso-software-layers1:before {
+	content: "E";
+}
+.lso-software-layers2:before {
+	content: "F";
+}
+.lso-software-layout:before {
+	content: "G";
+}
+.lso-software-layout-2columns:before {
+	content: "H";
+}
+.lso-software-layout-3columns:before {
+	content: "I";
+}
+.lso-software-layout-4boxes:before {
+	content: "J";
+}
+.lso-software-layout-4columns:before {
+	content: "K";
+}
+.lso-software-layout-4lines:before {
+	content: "L";
+}
+.lso-software-layout-8boxes:before {
+	content: "M";
+}
+.lso-software-layout-header:before {
+	content: "N";
+}
+.lso-software-layout-header-2columns:before {
+	content: "O";
+}
+.lso-software-layout-header-3columns:before {
+	content: "P";
+}
+.lso-software-layout-header-4boxes:before {
+	content: "Q";
+}
+.lso-software-layout-header-4columns:before {
+	content: "R";
+}
+.lso-software-layout-header-complex:before {
+	content: "S";
+}
+.lso-software-layout-header-complex2:before {
+	content: "T";
+}
+.lso-software-layout-header-complex3:before {
+	content: "U";
+}
+.lso-software-layout-header-complex4:before {
+	content: "V";
+}
+.lso-software-layout-header-sideleft:before {
+	content: "W";
+}
+.lso-software-layout-header-sideright:before {
+	content: "X";
+}
+.lso-software-layout-sidebar-left:before {
+	content: "Y";
+}
+.lso-software-layout-sidebar-right:before {
+	content: "Z";
+}
+.lso-software-magnete:before {
+	content: "0";
+}
+.lso-software-pages:before {
+	content: "1";
+}
+.lso-software-paintbrush:before {
+	content: "2";
+}
+.lso-software-paintbucket:before {
+	content: "3";
+}
+.lso-software-paintroller:before {
+	content: "4";
+}
+.lso-software-paragraph:before {
+	content: "5";
+}
+.lso-software-paragraph-align-left:before {
+	content: "6";
+}
+.lso-software-paragraph-align-right:before {
+	content: "7";
+}
+.lso-software-paragraph-center:before {
+	content: "8";
+}
+.lso-software-paragraph-justify-all:before {
+	content: "9";
+}
+.lso-software-paragraph-justify-center:before {
+	content: "!";
+}
+.lso-software-paragraph-justify-left:before {
+	content: "\"";
+}
+.lso-software-paragraph-justify-right:before {
+	content: "#";
+}
+.lso-software-paragraph-space-after:before {
+	content: "$";
+}
+.lso-software-paragraph-space-before:before {
+	content: "%";
+}
+.lso-software-pathfinder-exclude:before {
+	content: "&";
+}
+.lso-software-pathfinder-intersect:before {
+	content: "'";
+}
+.lso-software-pathfinder-subtract:before {
+	content: "(";
+}
+.lso-software-pathfinder-unite:before {
+	content: ")";
+}
+.lso-software-pen:before {
+	content: "*";
+}
+.lso-software-pen-add:before {
+	content: "+";
+}
+.lso-software-pen-remove:before {
+	content: ",";
+}
+.lso-software-pencil:before {
+	content: "-";
+}
+.lso-software-polygonallasso:before {
+	content: ".";
+}
+.lso-software-reflect-horizontal:before {
+	content: "/";
+}
+.lso-software-reflect-vertical:before {
+	content: ":";
+}
+.lso-software-remove-vectorpoint:before {
+	content: ";";
+}
+.lso-software-scale-expand:before {
+	content: "<";
+}
+.lso-software-scale-reduce:before {
+	content: "=";
+}
+.lso-software-selection-oval:before {
+	content: ">";
+}
+.lso-software-selection-polygon:before {
+	content: "?";
+}
+.lso-software-selection-rectangle:before {
+	content: "@";
+}
+.lso-software-selection-roundedrectangle:before {
+	content: "[";
+}
+.lso-software-shape-oval:before {
+	content: "]";
+}
+.lso-software-shape-polygon:before {
+	content: "^";
+}
+.lso-software-shape-rectangle:before {
+	content: "_";
+}
+.lso-software-shape-roundedrectangle:before {
+	content: "`";
+}
+.lso-software-slice:before {
+	content: "{";
+}
+.lso-software-transform-bezier:before {
+	content: "|";
+}
+.lso-software-vector-box:before {
+	content: "}";
+}
+.lso-software-vector-composite:before {
+	content: "~";
+}
+.lso-software-vector-line:before {
+	content: "\\";
+}
+.lso-software-vertical-align-bottom:before {
+	content: "\e000";
+}
+.lso-software-vertical-align-center:before {
+	content: "\e001";
+}
+.lso-software-vertical-align-top:before {
+	content: "\e002";
+}
+.lso-software-vertical-distribute-bottom:before {
+	content: "\e003";
+}
+.lso-software-vertical-distribute-center:before {
+	content: "\e004";
+}
+.lso-software-vertical-distribute-top:before {
+	content: "\e005";
+}
+

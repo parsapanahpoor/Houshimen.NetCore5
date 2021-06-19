@@ -1,0 +1,467 @@
+/**
+ * Linea Basic Elaboration, 1.0.0
+ * Created by Dario Ferrando
+ * http://www.linea.io/
+ * CC0-1.0 License
+ */
+@charset "UTF-8";
+
+@font-face {
+	font-family: "linea-basic-elaboration";
+	src: url('linea-basic-elaboration.eot');
+	src: url('linea-basic-elaboration.eot?#iefix') format('eot'),
+
+		url('linea-basic-elaboration.woff') format('woff'),
+		url('linea-basic-elaboration.ttf') format('truetype'),
+		url('linea-basic-elaboration.svg#linea-basic-elaboration') format('svg');
+}
+
+.lbae {
+	font-family: "linea-basic-elaboration";
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	speak: none;
+	text-decoration: none;
+	text-transform: none;
+}
+
+
+.lbae-basic-elaboration-bookmark-checck:before {
+	content: "a";
+}
+.lbae-basic-elaboration-bookmark-minus:before {
+	content: "b";
+}
+.lbae-basic-elaboration-bookmark-plus:before {
+	content: "c";
+}
+.lbae-basic-elaboration-bookmark-remove:before {
+	content: "d";
+}
+.lbae-basic-elaboration-briefcase-check:before {
+	content: "e";
+}
+.lbae-basic-elaboration-briefcase-download:before {
+	content: "f";
+}
+.lbae-basic-elaboration-briefcase-flagged:before {
+	content: "g";
+}
+.lbae-basic-elaboration-briefcase-minus:before {
+	content: "h";
+}
+.lbae-basic-elaboration-briefcase-plus:before {
+	content: "i";
+}
+.lbae-basic-elaboration-briefcase-refresh:before {
+	content: "j";
+}
+.lbae-basic-elaboration-briefcase-remove:before {
+	content: "k";
+}
+.lbae-basic-elaboration-briefcase-search:before {
+	content: "l";
+}
+.lbae-basic-elaboration-briefcase-star:before {
+	content: "m";
+}
+.lbae-basic-elaboration-briefcase-upload:before {
+	content: "n";
+}
+.lbae-basic-elaboration-browser-check:before {
+	content: "o";
+}
+.lbae-basic-elaboration-browser-download:before {
+	content: "p";
+}
+.lbae-basic-elaboration-browser-minus:before {
+	content: "q";
+}
+.lbae-basic-elaboration-browser-plus:before {
+	content: "r";
+}
+.lbae-basic-elaboration-browser-refresh:before {
+	content: "s";
+}
+.lbae-basic-elaboration-browser-remove:before {
+	content: "t";
+}
+.lbae-basic-elaboration-browser-search:before {
+	content: "u";
+}
+.lbae-basic-elaboration-browser-star:before {
+	content: "v";
+}
+.lbae-basic-elaboration-browser-upload:before {
+	content: "w";
+}
+.lbae-basic-elaboration-calendar-check:before {
+	content: "x";
+}
+.lbae-basic-elaboration-calendar-cloud:before {
+	content: "y";
+}
+.lbae-basic-elaboration-calendar-download:before {
+	content: "z";
+}
+.lbae-basic-elaboration-calendar-empty:before {
+	content: "A";
+}
+.lbae-basic-elaboration-calendar-flagged:before {
+	content: "B";
+}
+.lbae-basic-elaboration-calendar-heart:before {
+	content: "C";
+}
+.lbae-basic-elaboration-calendar-minus:before {
+	content: "D";
+}
+.lbae-basic-elaboration-calendar-next:before {
+	content: "E";
+}
+.lbae-basic-elaboration-calendar-noaccess:before {
+	content: "F";
+}
+.lbae-basic-elaboration-calendar-pencil:before {
+	content: "G";
+}
+.lbae-basic-elaboration-calendar-plus:before {
+	content: "H";
+}
+.lbae-basic-elaboration-calendar-previous:before {
+	content: "I";
+}
+.lbae-basic-elaboration-calendar-refresh:before {
+	content: "J";
+}
+.lbae-basic-elaboration-calendar-remove:before {
+	content: "K";
+}
+.lbae-basic-elaboration-calendar-search:before {
+	content: "L";
+}
+.lbae-basic-elaboration-calendar-star:before {
+	content: "M";
+}
+.lbae-basic-elaboration-calendar-upload:before {
+	content: "N";
+}
+.lbae-basic-elaboration-cloud-check:before {
+	content: "O";
+}
+.lbae-basic-elaboration-cloud-download:before {
+	content: "P";
+}
+.lbae-basic-elaboration-cloud-minus:before {
+	content: "Q";
+}
+.lbae-basic-elaboration-cloud-noaccess:before {
+	content: "R";
+}
+.lbae-basic-elaboration-cloud-plus:before {
+	content: "S";
+}
+.lbae-basic-elaboration-cloud-refresh:before {
+	content: "T";
+}
+.lbae-basic-elaboration-cloud-remove:before {
+	content: "U";
+}
+.lbae-basic-elaboration-cloud-search:before {
+	content: "V";
+}
+.lbae-basic-elaboration-cloud-upload:before {
+	content: "W";
+}
+.lbae-basic-elaboration-document-check:before {
+	content: "X";
+}
+.lbae-basic-elaboration-document-cloud:before {
+	content: "Y";
+}
+.lbae-basic-elaboration-document-download:before {
+	content: "Z";
+}
+.lbae-basic-elaboration-document-flagged:before {
+	content: "0";
+}
+.lbae-basic-elaboration-document-graph:before {
+	content: "1";
+}
+.lbae-basic-elaboration-document-heart:before {
+	content: "2";
+}
+.lbae-basic-elaboration-document-minus:before {
+	content: "3";
+}
+.lbae-basic-elaboration-document-next:before {
+	content: "4";
+}
+.lbae-basic-elaboration-document-noaccess:before {
+	content: "5";
+}
+.lbae-basic-elaboration-document-note:before {
+	content: "6";
+}
+.lbae-basic-elaboration-document-pencil:before {
+	content: "7";
+}
+.lbae-basic-elaboration-document-picture:before {
+	content: "8";
+}
+.lbae-basic-elaboration-document-plus:before {
+	content: "9";
+}
+.lbae-basic-elaboration-document-previous:before {
+	content: "!";
+}
+.lbae-basic-elaboration-document-refresh:before {
+	content: "\"";
+}
+.lbae-basic-elaboration-document-remove:before {
+	content: "#";
+}
+.lbae-basic-elaboration-document-search:before {
+	content: "$";
+}
+.lbae-basic-elaboration-document-star:before {
+	content: "%";
+}
+.lbae-basic-elaboration-document-upload:before {
+	content: "&";
+}
+.lbae-basic-elaboration-folder-check:before {
+	content: "'";
+}
+.lbae-basic-elaboration-folder-cloud:before {
+	content: "(";
+}
+.lbae-basic-elaboration-folder-document:before {
+	content: ")";
+}
+.lbae-basic-elaboration-folder-download:before {
+	content: "*";
+}
+.lbae-basic-elaboration-folder-flagged:before {
+	content: "+";
+}
+.lbae-basic-elaboration-folder-graph:before {
+	content: ",";
+}
+.lbae-basic-elaboration-folder-heart:before {
+	content: "-";
+}
+.lbae-basic-elaboration-folder-minus:before {
+	content: ".";
+}
+.lbae-basic-elaboration-folder-next:before {
+	content: "/";
+}
+.lbae-basic-elaboration-folder-noaccess:before {
+	content: ":";
+}
+.lbae-basic-elaboration-folder-note:before {
+	content: ";";
+}
+.lbae-basic-elaboration-folder-pencil:before {
+	content: "<";
+}
+.lbae-basic-elaboration-folder-picture:before {
+	content: "=";
+}
+.lbae-basic-elaboration-folder-plus:before {
+	content: ">";
+}
+.lbae-basic-elaboration-folder-previous:before {
+	content: "?";
+}
+.lbae-basic-elaboration-folder-refresh:before {
+	content: "@";
+}
+.lbae-basic-elaboration-folder-remove:before {
+	content: "[";
+}
+.lbae-basic-elaboration-folder-search:before {
+	content: "]";
+}
+.lbae-basic-elaboration-folder-star:before {
+	content: "^";
+}
+.lbae-basic-elaboration-folder-upload:before {
+	content: "_";
+}
+.lbae-basic-elaboration-mail-check:before {
+	content: "`";
+}
+.lbae-basic-elaboration-mail-cloud:before {
+	content: "{";
+}
+.lbae-basic-elaboration-mail-document:before {
+	content: "|";
+}
+.lbae-basic-elaboration-mail-download:before {
+	content: "}";
+}
+.lbae-basic-elaboration-mail-flagged:before {
+	content: "~";
+}
+.lbae-basic-elaboration-mail-heart:before {
+	content: "\\";
+}
+.lbae-basic-elaboration-mail-next:before {
+	content: "\e000";
+}
+.lbae-basic-elaboration-mail-noaccess:before {
+	content: "\e001";
+}
+.lbae-basic-elaboration-mail-note:before {
+	content: "\e002";
+}
+.lbae-basic-elaboration-mail-pencil:before {
+	content: "\e003";
+}
+.lbae-basic-elaboration-mail-picture:before {
+	content: "\e004";
+}
+.lbae-basic-elaboration-mail-previous:before {
+	content: "\e005";
+}
+.lbae-basic-elaboration-mail-refresh:before {
+	content: "\e006";
+}
+.lbae-basic-elaboration-mail-remove:before {
+	content: "\e007";
+}
+.lbae-basic-elaboration-mail-search:before {
+	content: "\e008";
+}
+.lbae-basic-elaboration-mail-star:before {
+	content: "\e009";
+}
+.lbae-basic-elaboration-mail-upload:before {
+	content: "\e00a";
+}
+.lbae-basic-elaboration-message-check:before {
+	content: "\e00b";
+}
+.lbae-basic-elaboration-message-dots:before {
+	content: "\e00c";
+}
+.lbae-basic-elaboration-message-happy:before {
+	content: "\e00d";
+}
+.lbae-basic-elaboration-message-heart:before {
+	content: "\e00e";
+}
+.lbae-basic-elaboration-message-minus:before {
+	content: "\e00f";
+}
+.lbae-basic-elaboration-message-note:before {
+	content: "\e010";
+}
+.lbae-basic-elaboration-message-plus:before {
+	content: "\e011";
+}
+.lbae-basic-elaboration-message-refresh:before {
+	content: "\e012";
+}
+.lbae-basic-elaboration-message-remove:before {
+	content: "\e013";
+}
+.lbae-basic-elaboration-message-sad:before {
+	content: "\e014";
+}
+.lbae-basic-elaboration-smartphone-cloud:before {
+	content: "\e015";
+}
+.lbae-basic-elaboration-smartphone-heart:before {
+	content: "\e016";
+}
+.lbae-basic-elaboration-smartphone-noaccess:before {
+	content: "\e017";
+}
+.lbae-basic-elaboration-smartphone-note:before {
+	content: "\e018";
+}
+.lbae-basic-elaboration-smartphone-pencil:before {
+	content: "\e019";
+}
+.lbae-basic-elaboration-smartphone-picture:before {
+	content: "\e01a";
+}
+.lbae-basic-elaboration-smartphone-refresh:before {
+	content: "\e01b";
+}
+.lbae-basic-elaboration-smartphone-search:before {
+	content: "\e01c";
+}
+.lbae-basic-elaboration-tablet-cloud:before {
+	content: "\e01d";
+}
+.lbae-basic-elaboration-tablet-heart:before {
+	content: "\e01e";
+}
+.lbae-basic-elaboration-tablet-noaccess:before {
+	content: "\e01f";
+}
+.lbae-basic-elaboration-tablet-note:before {
+	content: "\e020";
+}
+.lbae-basic-elaboration-tablet-pencil:before {
+	content: "\e021";
+}
+.lbae-basic-elaboration-tablet-picture:before {
+	content: "\e022";
+}
+.lbae-basic-elaboration-tablet-refresh:before {
+	content: "\e023";
+}
+.lbae-basic-elaboration-tablet-search:before {
+	content: "\e024";
+}
+.lbae-basic-elaboration-todolist-2:before {
+	content: "\e025";
+}
+.lbae-basic-elaboration-todolist-check:before {
+	content: "\e026";
+}
+.lbae-basic-elaboration-todolist-cloud:before {
+	content: "\e027";
+}
+.lbae-basic-elaboration-todolist-download:before {
+	content: "\e028";
+}
+.lbae-basic-elaboration-todolist-flagged:before {
+	content: "\e029";
+}
+.lbae-basic-elaboration-todolist-minus:before {
+	content: "\e02a";
+}
+.lbae-basic-elaboration-todolist-noaccess:before {
+	content: "\e02b";
+}
+.lbae-basic-elaboration-todolist-pencil:before {
+	content: "\e02c";
+}
+.lbae-basic-elaboration-todolist-plus:before {
+	content: "\e02d";
+}
+.lbae-basic-elaboration-todolist-refresh:before {
+	content: "\e02e";
+}
+.lbae-basic-elaboration-todolist-remove:before {
+	content: "\e02f";
+}
+.lbae-basic-elaboration-todolist-search:before {
+	content: "\e030";
+}
+.lbae-basic-elaboration-todolist-star:before {
+	content: "\e031";
+}
+.lbae-basic-elaboration-todolist-upload:before {
+	content: "\e032";
+}
+

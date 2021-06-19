@@ -1,0 +1,45 @@
+// =============================================================================
+// BORDERS
+// =============================================================================
+
+@border-radius: 4px;
+
+// =============================================================================
+// COLORS
+// =============================================================================
+
+@color-background: #f7f7f7;
+@color-background-dark: #212529;
+
+@color-primary: #0088CC;
+@color-primary-inverse: contrast(@color-primary, #777, #FFF);
+
+@color-secondary: #e36159;
+@color-secondary-inverse: contrast(@color-secondary, #777, #FFF);
+
+@color-tertiary: #2BAAB1;
+@color-tertiary-inverse: contrast(@color-tertiary, #777, #FFF);
+
+@color-quaternary: #383f48;
+@color-quaternary-inverse: contrast(@color-quaternary, #777, #FFF);
+
+@color-dark: #212529;
+@color-dark-inverse: #FFF;
+
+@color-light: #FFF;
+@color-light-inverse: #777;
+
+// colors list
+@colors-list: primary @color-primary @color-primary-inverse, secondary @color-secondary @color-secondary-inverse, tertiary @color-tertiary @color-tertiary-inverse, quaternary @color-quaternary @color-quaternary-inverse, dark @color-dark @color-dark-inverse, light @color-light @color-light-inverse;
+
+// colors list mobile (without dark & light)
+@colors-list-mobile: primary @color-primary @color-primary-inverse, secondary @color-secondary @color-secondary-inverse, tertiary @color-tertiary @color-tertiary-inverse, quaternary @color-quaternary @color-quaternary-inverse;
+
+// color primary scale list
+@colors-scale-list: 1 darken(@color-primary, 10%), 2 darken(@color-primary, 5%), 3 @color-primary, 4 lighten(@color-primary, 5%), 5 lighten(@color-primary, 10%), 6 lighten(@color-primary, 15%);
+
+// color default scale list
+@color-background-scale: 1 @color-background, 2 darken(@color-background, 6%), 3 darken(@color-background, 9%), 4 darken(@color-background, 12%), 5 darken(@color-background, 15%), 6 darken(@color-background, 18%), 7 darken(@color-background, 21%), 8 darken(@color-background, 24%), 9 darken(@color-background, 27%);
+
+// color dark scale list
+@color-background-scale-dark: 1 @color-background-dark, 2 darken(@color-background-dark, 2%), 3 darken(@color-background-dark, 4%), 4 darken(@color-background-dark, 6%), 5 darken(@color-background-dark, 8%), 6 darken(@color-background-dark, 10%), 7 darken(@color-background-dark, 12%), 8 darken(@color-background-dark, 14%), 9 darken(@color-background-dark, 16%);

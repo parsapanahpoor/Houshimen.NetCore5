@@ -1,0 +1,139 @@
+/* Process */
+.process {
+	text-align: center;
+	.process-step {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+	}
+	.process-step-circle {
+		display: flex;
+		justify-content: center;
+		height: 90px;
+		text-align: center;
+		width: 90px;
+		border: 2px solid #CCC;
+		border-radius: 50%;
+		align-items: center;
+		position: relative;
+		background-color: transparent;
+		transition: all 0.2s ease-in-out;
+	}
+	.process-step-content {
+		padding-top: 20px;
+	}
+	.process-step-circle-content {
+		font-weight: bold;
+		color: $color-dark;
+		font-size: 1.6em;
+		letter-spacing: -1px;
+		transition: all 0.2s ease-in-out;
+	}
+	.process-step {
+		&:hover {
+			.process-step-circle {
+				background-color: #CCC;
+				.process-step-circle-content {
+					color: #FFF;
+					.icons {
+						color: #FFF !important;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.process {
+		.process-step {
+			&:before {
+				height: 2px;
+				display: block;
+				background-color: #EDEDED;
+				position: absolute;
+				content: '';
+				width: 50%;
+				top: 45px;
+				left: 75%;
+			}
+			&:last-child {
+				&:before {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+// Process Vertical
+.process-vertical {
+	text-align: $left;
+	.process-step {
+		width: 100%;
+		flex-direction: row;
+		justify-content: start;
+		align-items: start;
+		position: relative;
+		padding-bottom: 60px;
+		&:before {
+			display: none;
+		}
+		&:after {
+			width: 2px;
+			display: block;
+			background-color: #EDEDED;
+			position: absolute;
+			content: '';
+			height: calc(100% - 80px);
+			top: 70px;
+			left: 30px;
+		}
+		&:last-child {
+			&:after {
+				display: none;
+			}
+		}
+	}
+	.process-step-circle {
+		height: 60px;
+		width: 60px;
+		margin: 0 15px 0 0;
+		min-height: 60px;
+		min-width: 60px;
+	}
+	.process-step-content {
+		padding-top: 0;
+	}
+}
+
+// Process Connecting Line
+.process-connecting-line {
+	position: relative;
+	text-align: $left;
+	.connecting-line {
+		content: '';
+		position: absolute;
+		top: 25px;
+		left: 15px;
+		right: 15px;
+		height: 3px;
+		background: #CCC;
+	}
+	.process-step {
+		align-items: flex-start;
+		padding-right: 3rem;
+		padding-left: 3rem;
+		&:before {
+			content: none;
+		}
+	}
+	.process-step-circle {
+		background: #FFF;
+		width: 50px;
+		height: 50px;
+		border: 3px solid #CCC;
+	}
+}
