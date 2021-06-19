@@ -103,7 +103,6 @@ namespace Presentation.Controllers
 
         #region Login
         [HttpGet]
-        [Route("/Login")]
 
         public IActionResult Login(string returnUrl = null , bool EditProfile = false, bool Register = false, bool recovery = false, bool permission = false)
         {
@@ -121,7 +120,6 @@ namespace Presentation.Controllers
         }
 
         [HttpPost]
-        [Route("/Login")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Login(LoginViewModel model, string returnUrl = null)
         {
