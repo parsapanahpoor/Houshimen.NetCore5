@@ -1,4 +1,5 @@
 using DataContext;
+using IoC;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
@@ -91,7 +92,7 @@ namespace Presentation
         }
         public static void RegisterServices(IServiceCollection services)
         {
-            //DependencyContainer.RegisterServices(services);
+            DependencyContainer.RegisterServices(services);
 
         }
     }

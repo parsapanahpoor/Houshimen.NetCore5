@@ -22,6 +22,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DataContext\DataContext.csproj" />
+    <ProjectReference Include="..\IoC\IoC.csproj" />
   </ItemGroup>
 
 </Project>
