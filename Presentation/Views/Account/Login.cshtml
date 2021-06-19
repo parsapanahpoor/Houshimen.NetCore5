@@ -1,0 +1,129 @@
+﻿@using DataAccess.ViewModels
+@model LoginViewModel
+@{ ViewData["Title"] = "ورود کاربران ";
+                 }
+
+<div role="main" class="main position-relative z-index-2 z-index-mobile-0">
+    <div class="appear-animation animated fadeInUpShorter appear-animation-visible" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200" style="animation-delay: 200ms;">
+        <div class=" mt-5">
+            <section class="page-header page-header-modern bg-color-light-scale-1 page-header-md">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-12 align-self-center p-static order-2 text-center">
+
+                            <h1 class="text-dark font-weight-bold text-8"> ورود </h1>
+                            <span class="sub-title text-dark"></span>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <hr class="solid my-5">
+    <div class="container mb-10 pb-5">
+
+        <div class="py-4">
+
+            <div class="row">
+                <div class="col">
+
+                    <div class="featured-boxes">
+                        <div class="row">
+
+                            <div class="col-md-10" style="margin:auto;">
+                                <div class="featured-box featured-box-primary text-left mt-5" style="height: 450px;">
+                                    <div class="txr box-content">
+
+                                        @if (ViewBag.permission == true)
+                                        {
+                            <div class="alert alert-danger">
+                                <p class="help-block">کاربر محترم شما دسترسی امنیتی برای ورورد به بخش درخواست شده را ندارید   </p>
+                                <p class="help-block">در صورت تکرار عملیات جاری فعالیت شما به مراجع قانونی گزارش شده و  پیگرد قانونی خواهد داشت    </p>
+                            </div>}
+
+                                        @if (ViewBag.EditProfile == true)
+                                        {
+                            <div class="alert alert-success">
+                                <p class="help-block">ویرایش حساب با موفقیت انجام شده است  </p>
+                            </div>}
+
+                                        @if (ViewBag.Register == true)
+                                        {
+                            <div class="alert alert-success">
+                                <p class="help-block">ثبت نام شما با موفقیت انجام شده است </p>
+                            </div>}
+                                        @if (ViewBag.recovery == true)
+                                        {
+                            <div class="alert alert-success">
+                                <p class="help-block">رمز عبور شما تغییر کرده است  </p>
+                            </div>}
+                                        @if (ViewBag.IsSuccess != null)
+                                        {
+                            <div class="alert alert-success">
+                                <p class="help-block">ورود با موفقیت انجام شد</p>
+                            </div>
+
+                                            <script>// Your delay in milliseconds
+                                                var delay = 3000;
+                                                setTimeout(function () { window.location = "https://localhost:44322/"; }, delay);</script>}
+                                        <h4 class="color-primary font-weight-semibold text-4 text-uppercase mb-3">ورود</h4>
+                                        <form asp-action="Login" asp-controller="Account" id="frmSignIn" method="post" class="needs-validation" novalidate="novalidate">
+                                            <div style="color: darkred;" asp-validation-summary="ModelOnly"></div>
+
+
+
+                                            <div class="form-row">
+                                                <div class="form-group col">
+                                                    <label class="font-weight-bold text-dark text-2">شماره تلفن </label>
+                                                    <input type="text" asp-for="UserName" class="form-control form-control-lg" required="">
+                                                    <span style="color:red" asp-validation-for="UserName"></span>
+
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-group col">
+                                                    <a class="float-left" asp-action="ForgotPassword" asp-controller="Account">(گذرواژه را فراموش کردم)</a>
+                                                    <label class="font-weight-bold text-dark text-2">گذرواژه</label>
+                                                    <input type="password" asp-for="Password" class="form-control form-control-lg" required="">
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="displayf form-group col-lg-1">
+                                                    <input type="submit" value="ورود" class="btn btn-success btn-modern float-right" data-loading-text="Loading...">
+
+                                                </div>
+                                                <div class="displayf form-group col-lg-5">
+                                                    <a asp-action="register" value="ثبت نام " class="btn btn-primary btn-modern float-right" data-loading-text="Loading...">ثبت نام </a>
+
+                                                </div>
+                                                <div class="form-group col-lg-6">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="rememberme">
+                                                        <label class="custom-control-label text-2" for="rememberme">به خاطر بسپار</label>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+</div>
+

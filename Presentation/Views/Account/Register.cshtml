@@ -1,0 +1,114 @@
+﻿@using DataAccess.ViewModels
+@model RegisterViewModel
+@{ ViewData["Title"] = "ثبت نام ";
+               }
+
+<div role="main" class="main position-relative z-index-2 z-index-mobile-0">
+    <div class="appear-animation animated fadeInUpShorter appear-animation-visible" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200" style="animation-delay: 200ms;">
+        <div class=" mt-5">
+            <section class="page-header page-header-modern bg-color-light-scale-1 page-header-md">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-12 align-self-center p-static order-2 text-center">
+
+                            <h1 class="text-dark font-weight-bold text-8">ثبت نام</h1>
+                            <span class="sub-title text-dark"></span>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <hr class="solid my-5">
+    <div class="container mb-5 pb-4">
+
+        <div class="py-4">
+
+            <div class="row">
+                <div class="col">
+
+                    <div class="featured-boxes">
+                        <div class="row">
+                            <div class="col-md-10" style="margin:auto">
+                                <div class=" featured-box featured-box-primary text-left mt-5" @*style="height: 450px;"*@>
+                                    <div class="txr box-content">
+                                        <h4 class="color-primary font-weight-semibold text-4 text-uppercase mb-3">ثبت نام</h4>
+                                        <form asp-controller="Account" asp-action="Register" id="frmSignUp" method="post" class="needs-validation" novalidate="novalidate">
+                                            <div style="color: darkred;" asp-validation-summary="ModelOnly"></div>
+
+
+                                            <div class="form-row">
+                                                <div class="form-group col-lg-6">
+                                                    <label class="font-weight-bold text-dark text-2">تلفن همراه* </label>
+                                                    <input type="text" asp-for="PhoneNumber" class="form-control form-control-lg" required="">
+                                                    <span style="color:red" asp-validation-for="PhoneNumber"></span>
+
+                                                </div>
+                                                <div class="form-group col-lg-6">
+                                                    <label class="font-weight-bold text-dark text-2">*نام کاربری </label>
+                                                    <input type="text" asp-for="UserName" class="form-control form-control-lg" required="">
+                                                    <span style="color:red" asp-validation-for="UserName"></span>
+
+                                                </div>
+
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-group col">
+                                                    <label class="font-weight-bold text-dark text-2">ایمیل* </label>
+                                                    <input type="text" asp-for="Email" class="form-control form-control-lg" required="">
+                                                    <span style="color:red" asp-validation-for="Email"></span>
+
+                                                </div>
+
+
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-group col-lg-6">
+                                                    <label class="font-weight-bold text-dark text-2">*تکرار گذرواژه</label>
+                                                    <input type="password" asp-for="RePassword" class="form-control form-control-lg" required="">
+                                                    <span style="color:red" asp-validation-for="RePassword"></span>
+
+                                                </div>
+                                                <div class="form-group col-lg-6">
+                                                    <label class="font-weight-bold text-dark text-2">*گذرواژه</label>
+                                                    <input type="password" asp-for="Password" class="form-control form-control-lg" required="">
+                                                    <span style="color:red" asp-validation-for="Password"></span>
+
+                                                </div>
+
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="displayf form-group col-lg-3">
+                                                    <input type="submit" value="ثبت نام" class="btn btn-success btn-modern float-right" data-loading-text="Loading...">
+                                                </div>
+                                                <div class="form-group col-lg-9">
+
+                                                    <a class="btn btn-primary btn-modern float-right" asp-action="login" >ورود کاربر </a>
+                                                </div>
+
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+</div>
+
