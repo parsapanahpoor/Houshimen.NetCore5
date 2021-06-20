@@ -106,8 +106,7 @@ namespace Presentation.Controllers
 
         public IActionResult Login(string returnUrl = null , bool EditProfile = false, bool Register = false, bool recovery = false, bool permission = false)
         {
-            if (_signInManager.IsSignedIn(User))
-                return RedirectToAction("Index", "Home");
+      
 
 
             ViewBag.EditProfile = EditProfile;
@@ -163,7 +162,12 @@ namespace Presentation.Controllers
             return View(model);
         }
 
+        public IActionResult AccessDenied(string ReturnUrl)
+        {
 
+            return Redirect("/Account/Login?permission=true");
+        
+        }
 
         #endregion
 
@@ -177,6 +181,51 @@ namespace Presentation.Controllers
             return RedirectToAction("Index", "Home");
         }
         #endregion
+
+        #region CheckUserRoleForLogin
+        public IActionResult ManageUserForLogin()
+        {
+
+            //List<int> UserRoles = _userManager.role(User.Identity.Name);
+
+            if (User.IsInRole("User"))
+            {
+
+                return Redirect("/User/Home/Index");
+
+            }
+            else
+            {
+                if (User.IsInRole("Admin"))
+                {
+
+                    return Redirect("/Admin/Users/Index");
+
+                }
+                else
+                {
+                    if (User.IsInRole("Writer"))
+                    {
+                        return Redirect("/Admin/Users/Index");
+                    }
+                    if (User.IsInRole("Accounter"))
+                    {
+                        return Redirect("/Admin/Users/Index");
+                    }
+
+                }
+
+
+
+            }
+
+            return View();
+
+        }
+
+
+        #endregion
+
 
     }
 }
