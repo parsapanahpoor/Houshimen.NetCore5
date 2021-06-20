@@ -16,6 +16,7 @@ namespace DataAccess.Design_Pattern.UnitOfWork
 
          UserRepository userRepository { get; }
          BlogCategoryRepository blogCategoryRepository { get; }
+         BlogRepository blogRepository { get; }
 
         #endregion
 
