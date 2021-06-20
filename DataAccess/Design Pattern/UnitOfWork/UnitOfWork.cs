@@ -17,6 +17,7 @@ namespace DataAccess.Design_Pattern.UnitOfWork
         {
             _db = db;
             userRepository = new UserRepository(_db);
+            blogCategoryRepository = new BlogCategoryRepository(_db);
   
         }
 
@@ -24,6 +25,7 @@ namespace DataAccess.Design_Pattern.UnitOfWork
 
         #region Repositories
         public UserRepository userRepository { get; private set; }
+        public BlogCategoryRepository blogCategoryRepository { get; private set; }
 
         #endregion
 
