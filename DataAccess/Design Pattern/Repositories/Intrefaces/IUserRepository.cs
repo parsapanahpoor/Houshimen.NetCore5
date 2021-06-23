@@ -14,6 +14,7 @@ namespace DataAccess.Design_Pattern.Repositories
         bool IsExistUserName(string username);
         bool IsExistEmail(string email);
         bool IsExistPhoneNumber(string phonenumber);
+        string GetUserByUserName(string username);
 
 
     }

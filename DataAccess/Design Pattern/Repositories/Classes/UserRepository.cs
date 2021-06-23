@@ -18,6 +18,11 @@ namespace DataAccess.Design_Pattern.Repositories.Classes
             _db = db;
         }
 
+        public string GetUserByUserName(string username)
+        {
+            return GetAll(p=>p.UserName == username).Select(p=>p.Id).First();
+        }
+
         public bool IsExistEmail(string email)
         {
             return GetAll().Any(p => p.Email == email);

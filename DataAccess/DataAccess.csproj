@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DataContext\DataContext.csproj" />
+    <ProjectReference Include="..\Utilites\Utilites.csproj" />
   </ItemGroup>
 
 </Project>

@@ -20,6 +20,7 @@
     <Folder Include="Areas\Admin\Data\" />
     <Folder Include="Areas\Admin\Models\" />
     <Folder Include="wwwroot\Etecsho_Desinge\js\examples\" />
+    <Folder Include="wwwroot\Images\Blog\Videos\400px\" />
   </ItemGroup>
 
   <ItemGroup>

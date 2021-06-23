@@ -4,14 +4,16 @@ using DataContext;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace DataContext.Migrations
 {
     [DbContext(typeof(HoushimenContext))]
-    partial class HoushimenContextModelSnapshot : ModelSnapshot
+    [Migration("20210620093228_UpdateBlogController")]
+    partial class UpdateBlogController
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -207,10 +209,6 @@ namespace DataContext.Migrations
                     b.Property<string>("UserId")
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("UserName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("VideoName")
                         .HasMaxLength(50)
@@ -537,7 +535,7 @@ namespace DataContext.Migrations
             modelBuilder.Entity("Models.Entities.Blog.Blog", b =>
                 {
                     b.HasOne("Models.Entities.User.User", "Users")
-                        .WithMany("Blogs")
+                        .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
@@ -567,7 +565,7 @@ namespace DataContext.Migrations
             modelBuilder.Entity("Models.Entities.Blog.Video", b =>
                 {
                     b.HasOne("Models.Entities.User.User", "Users")
-                        .WithMany("Video")
+                        .WithMany()
                         .HasForeignKey("UsersId");
 
                     b.Navigation("Users");
@@ -603,7 +601,7 @@ namespace DataContext.Migrations
                         .HasForeignKey("ParentId");
 
                     b.HasOne("Models.Entities.User.User", "Users")
-                        .WithMany("Comments")
+                        .WithMany()
                         .HasForeignKey("UsersId");
 
                     b.HasOne("Models.Entities.Blog.Video", "Video")
@@ -641,15 +639,6 @@ namespace DataContext.Migrations
             modelBuilder.Entity("Models.Entities.Comment.Comment", b =>
                 {
                     b.Navigation("comments");
-                });
-
-            modelBuilder.Entity("Models.Entities.User.User", b =>
-                {
-                    b.Navigation("Blogs");
-
-                    b.Navigation("Comments");
-
-                    b.Navigation("Video");
                 });
 #pragma warning restore 612, 618
         }

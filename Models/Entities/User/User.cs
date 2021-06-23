@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Models.Entities.User
 {
-    public  class User : IdentityUser
+    public class User : IdentityUser
     {
         public User()
         {
@@ -34,5 +34,20 @@ namespace Models.Entities.User
 
         public bool IsDelete { get; set; }
 
+
+
+        #region Relations
+
+        //public virtual List<UserRole> UserRoles { get; set; }
+        public virtual List<Blog.Blog> Blogs { get; set; }
+        public virtual List<Blog.Video> Video { get; set; }
+        //public virtual List<Product.Product> Product { get; set; }
+
+        public virtual List<Models.Entities.Comment.Comment> Comments { get; set; }
+        //public virtual List<Models.Entites.Slider.Slider> Sliders { get; set; }
+
+        #endregion
+
     }
+    
 }

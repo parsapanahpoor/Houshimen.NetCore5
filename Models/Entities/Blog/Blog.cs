@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace Models.Entities.Blog
@@ -18,7 +19,10 @@ namespace Models.Entities.Blog
         public int BlogId { get; set; }
 
         [Required]
-        public int UserId { get; set; }
+        public String UserId { get; set; }
+
+        [Required]
+        public String UserName { get; set; }
 
         [Display(Name = "عنوان بلاگ ")]
         [Required(ErrorMessage = "لطفا {0} را وارد کنید")]
