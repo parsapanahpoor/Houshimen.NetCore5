@@ -1,4 +1,5 @@
 ﻿using DataAccess.Design_Pattern.Repositories.Classes;
+using DataAccess.Design_Pattern.Repositories.Intrefaces;
 using DataContext;
 using System;
 using System.Collections.Generic;
@@ -20,6 +21,8 @@ namespace DataAccess.Design_Pattern.UnitOfWork
             blogCategoryRepository = new BlogCategoryRepository(_db);
             blogRepository = new BlogRepository(_db);
             blogSelectedCategoryRepository = new BlogSelectedCategoryRepository(_db);
+            videosRepository = new VideosRepository(_db);
+            videosSelectedCategory = new VideosSelectedCategoryRepository(_db);
   
         }
 
@@ -30,6 +33,9 @@ namespace DataAccess.Design_Pattern.UnitOfWork
         public BlogCategoryRepository blogCategoryRepository { get; private set; }
         public BlogRepository blogRepository { get; private set; }
         public BlogSelectedCategoryRepository blogSelectedCategoryRepository { get; private set; }
+        public VideosRepository videosRepository { get; private set; }
+        public VideosSelectedCategoryRepository videosSelectedCategory { get; private set; }
+
 
         #endregion
 

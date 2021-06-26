@@ -6,19 +6,19 @@ using System.Threading.Tasks;
 
 namespace DataAccess.ViewModels
 {
-    public class AddCategoryToBlogViewModel
+    public class AddCategoryToVideosViewModel
     {
-        public AddCategoryToBlogViewModel()
+        public AddCategoryToVideosViewModel()
         {
-            SelectedBlogCategory = new List<BlogCategoriesViewModel>();
+            SelectedVideoCategory = new List<VideosCategoriesViewModel>();
         }
 
-        public int BlogId { get; set; }
+        public int VideoId { get; set; }
 
-        public List<BlogCategoriesViewModel> SelectedBlogCategory { get; set; }
+        public List<VideosCategoriesViewModel> SelectedVideoCategory { get; set; }
     }
 
-    public class BlogCategoriesViewModel
+    public class VideosCategoriesViewModel
     {
         public int CategoryId { get; set; }
         public string CategoriName { get; set; }

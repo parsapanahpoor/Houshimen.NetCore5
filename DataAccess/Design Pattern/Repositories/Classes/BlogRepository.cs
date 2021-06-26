@@ -18,7 +18,7 @@ namespace DataAccess.Design_Pattern.Repositories.Classes
 {
 
 
-    public   class BlogRepository : GenericRepository<Blog>, IBlogRepository
+    public class BlogRepository : GenericRepository<Blog>, IBlogRepository
     {
         private readonly HoushimenContext _db;
 
@@ -36,7 +36,7 @@ namespace DataAccess.Design_Pattern.Repositories.Classes
             blo.UserId = blog.UserId;
             blo.IsActive = true;
             blo.CreateDate = DateTime.Now;
-            blo.BlogImageName= "no-photo.png";  //تصویر پیشفرض
+            blo.BlogImageName = "no-photo.png";  //تصویر پیشفرض
             blo.BlogTitle = blog.BlogTitle;
             blo.ShortDescription = blog.ShortDescription;
             blo.LongDescription = blog.LongDescription;
@@ -49,7 +49,7 @@ namespace DataAccess.Design_Pattern.Repositories.Classes
             if (imgBlogUp != null && imgBlogUp.IsImage())
             {
                 blo.BlogImageName = NameGenerator.GenerateUniqCode() + Path.GetExtension(imgBlogUp.FileName);
-                string imagePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/Images/Blog/Image", blo.BlogImageName) ;
+                string imagePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/Images/Blog/Image", blo.BlogImageName);
 
                 using (var stream = new FileStream(imagePath, FileMode.Create))
                 {
@@ -78,7 +78,7 @@ namespace DataAccess.Design_Pattern.Repositories.Classes
             Delete(blog);
 
             //TODO Check Image
-            if (blog.BlogImageName != null )
+            if (blog.BlogImageName != null)
             {
 
                 if (blog.BlogImageName != "no-photo.png")
@@ -102,11 +102,11 @@ namespace DataAccess.Design_Pattern.Repositories.Classes
                 }
 
             }
-            }
+        }
 
-            public List<Blog> GetAllBlogs()
+        public List<Blog> GetAllBlogs()
         {
-            return GetAll().OrderByDescending(p=>p.CreateDate).ToList();
+            return GetAll().OrderByDescending(p => p.CreateDate).ToList();
         }
 
         public Blog GetBlogByID(int id)

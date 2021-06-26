@@ -1,4 +1,5 @@
 ﻿using DataAccess.Design_Pattern.Repositories.Classes;
+using DataAccess.Design_Pattern.Repositories.Intrefaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,6 +19,8 @@ namespace DataAccess.Design_Pattern.UnitOfWork
          BlogCategoryRepository blogCategoryRepository { get; }
          BlogRepository blogRepository { get; }
          BlogSelectedCategoryRepository blogSelectedCategoryRepository { get; }
+         VideosRepository videosRepository { get; }
+         VideosSelectedCategoryRepository videosSelectedCategory { get; }
 
         #endregion
 

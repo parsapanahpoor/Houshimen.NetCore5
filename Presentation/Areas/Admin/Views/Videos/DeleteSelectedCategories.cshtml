@@ -1,4 +1,4 @@
-﻿@model DataAccess.ViewModels.AddCategoryToBlogViewModel
+﻿@model DataAccess.ViewModels.AddCategoryToVideosViewModel
 @using Models.Entities.Blog;
 @{ ViewData["Title"] = "حذف دسته بندی   ";
     Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
@@ -22,8 +22,8 @@
             </div>
         </div><!-- /.container-fluid -->
     </section>
-    <form asp-action="DeleteSelectedCategories" asp-controller="Blogs" asp-area="Admin" method="post" enctype="multipart/form-data">
-        <input type="hidden" asp-for="BlogId" />
+    <form asp-action="DeleteSelectedCategories" asp-controller="Videos" asp-area="Admin" method="post" enctype="multipart/form-data">
+        <input type="hidden" asp-for="VideoId" />
 
         <section class="content">
             <div class="container-fluid">
@@ -44,14 +44,14 @@
                                 <div class="form-group">
                                     <div class="form-check">
 
-                                        @for (int i = 0; i < Model.SelectedBlogCategory.Count; i++)
+                                        @for (int i = 0; i < Model.SelectedVideoCategory.Count; i++)
                                         {
                                             <br />
-                                            <input class="form-check-input" type="checkbox" asp-for="@Model.SelectedBlogCategory[i].IsSelected" />
-                                            <label class="form-check-label" style="margin-right: 30px;">@Model.SelectedBlogCategory[i].CategoryId</label>
-                                            <label class="form-check-label" style="margin-right: 30px;">@Model.SelectedBlogCategory[i].CategoriName</label>
+                                            <input class="form-check-input" type="checkbox" asp-for="@Model.SelectedVideoCategory[i].IsSelected" />
+                                            <label class="form-check-label" style="margin-right: 30px;">@Model.SelectedVideoCategory[i].CategoryId</label>
+                                            <label class="form-check-label" style="margin-right: 30px;">@Model.SelectedVideoCategory[i].CategoriName</label>
 
-                                            <input type="hidden" asp-for="@Model.SelectedBlogCategory[i].CategoryId" />
+                                            <input type="hidden" asp-for="@Model.SelectedVideoCategory[i].CategoryId" />
                                         }
                                     </div>
 

@@ -18,7 +18,10 @@ namespace Models.Entities.Blog
         public int VideoId { get; set; }
 
         [Required]
-        public int UserId { get; set; }
+        public string UserId { get; set; }
+
+        [Required]
+        public string Username { get; set; }
 
         [Display(Name = "عنوان ویدیو ")]
         [Required(ErrorMessage = "لطفا {0} را وارد کنید")]
