@@ -23,6 +23,8 @@ namespace DataAccess.Design_Pattern.UnitOfWork
             blogSelectedCategoryRepository = new BlogSelectedCategoryRepository(_db);
             videosRepository = new VideosRepository(_db);
             videosSelectedCategory = new VideosSelectedCategoryRepository(_db);
+            sliderRepository = new SliderRepository(_db);
+            employeeRepository = new EmployeeRepository(_db);
   
         }
 
@@ -35,6 +37,8 @@ namespace DataAccess.Design_Pattern.UnitOfWork
         public BlogSelectedCategoryRepository blogSelectedCategoryRepository { get; private set; }
         public VideosRepository videosRepository { get; private set; }
         public VideosSelectedCategoryRepository videosSelectedCategory { get; private set; }
+        public SliderRepository sliderRepository { get; private set; }
+        public EmployeeRepository employeeRepository { get; private set; }
 
 
         #endregion

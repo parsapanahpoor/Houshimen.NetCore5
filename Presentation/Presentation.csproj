@@ -21,6 +21,7 @@
     <Folder Include="Areas\Admin\Models\" />
     <Folder Include="wwwroot\Etecsho_Desinge\js\examples\" />
     <Folder Include="wwwroot\Images\Blog\Videos\400px\" />
+    <Folder Include="wwwroot\Images\Slider\thumb\" />
   </ItemGroup>
 
   <ItemGroup>

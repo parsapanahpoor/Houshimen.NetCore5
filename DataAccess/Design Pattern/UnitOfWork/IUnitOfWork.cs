@@ -21,6 +21,8 @@ namespace DataAccess.Design_Pattern.UnitOfWork
          BlogSelectedCategoryRepository blogSelectedCategoryRepository { get; }
          VideosRepository videosRepository { get; }
          VideosSelectedCategoryRepository videosSelectedCategory { get; }
+         SliderRepository sliderRepository { get; }
+         EmployeeRepository employeeRepository { get; }
 
         #endregion
 

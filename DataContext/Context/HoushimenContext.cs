@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Models.Entities.Blog;
+using Models.Entities.Employee;
+using Models.Entities.Slider;
 using Models.Entities.User;
 using System;
 using System.Collections.Generic;
@@ -36,6 +38,17 @@ namespace DataContext
 
         #endregion
 
+        #region Slider
+
+        public DbSet<Slider> Slider { get; set; }
+
+        #endregion
+
+        #region Employee
+
+        public DbSet<Employee> Employee { get; set; }
+
+        #endregion
 
         #region OnModelCreating
         protected override void OnModelCreating(ModelBuilder modelBuilder)

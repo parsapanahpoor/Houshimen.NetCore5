@@ -4,14 +4,16 @@ using DataContext;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace DataContext.Migrations
 {
     [DbContext(typeof(HoushimenContext))]
-    partial class HoushimenContextModelSnapshot : ModelSnapshot
+    [Migration("20210626084859_updateslidertable")]
+    partial class updateslidertable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -401,48 +403,6 @@ namespace DataContext.Migrations
                     b.HasIndex("VideoId");
 
                     b.ToTable("Comment");
-                });
-
-            modelBuilder.Entity("Models.Entities.Employee.Employee", b =>
-                {
-                    b.Property<int>("EmployeeId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("EmployeeLevel")
-                        .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
-
-                    b.Property<bool>("IsDelete")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("PersonalLink")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("SocialMedia1")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("SocialMedia2")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("UserAvatar")
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
-
-                    b.Property<string>("UserName")
-                        .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
-
-                    b.HasKey("EmployeeId");
-
-                    b.ToTable("Employee");
                 });
 
             modelBuilder.Entity("Models.Entities.Slider.Slider", b =>

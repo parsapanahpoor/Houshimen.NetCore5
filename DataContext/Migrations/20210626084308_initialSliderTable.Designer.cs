@@ -4,14 +4,16 @@ using DataContext;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace DataContext.Migrations
 {
     [DbContext(typeof(HoushimenContext))]
-    partial class HoushimenContextModelSnapshot : ModelSnapshot
+    [Migration("20210626084308_initialSliderTable")]
+    partial class initialSliderTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -403,102 +405,6 @@ namespace DataContext.Migrations
                     b.ToTable("Comment");
                 });
 
-            modelBuilder.Entity("Models.Entities.Employee.Employee", b =>
-                {
-                    b.Property<int>("EmployeeId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("EmployeeLevel")
-                        .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
-
-                    b.Property<bool>("IsDelete")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("PersonalLink")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("SocialMedia1")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("SocialMedia2")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("UserAvatar")
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
-
-                    b.Property<string>("UserName")
-                        .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
-
-                    b.HasKey("EmployeeId");
-
-                    b.ToTable("Employee");
-                });
-
-            modelBuilder.Entity("Models.Entities.Slider.Slider", b =>
-                {
-                    b.Property<int>("SliderId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("BlogImageName")
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.Property<DateTime?>("EndDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("FirstText")
-                        .HasMaxLength(450)
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<bool>("IsActive")
-                        .HasColumnType("bit");
-
-                    b.Property<bool>("IsDelete")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("Link")
-                        .HasMaxLength(350)
-                        .HasColumnType("nvarchar(350)");
-
-                    b.Property<string>("SecondeText")
-                        .HasMaxLength(450)
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<DateTime?>("StartDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("ThirdText")
-                        .HasMaxLength(450)
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("UserId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("UserName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("SliderId");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("Slider");
-                });
-
             modelBuilder.Entity("Models.Entities.User.User", b =>
                 {
                     b.Property<string>("Id")
@@ -715,17 +621,6 @@ namespace DataContext.Migrations
                     b.Navigation("Users");
 
                     b.Navigation("Video");
-                });
-
-            modelBuilder.Entity("Models.Entities.Slider.Slider", b =>
-                {
-                    b.HasOne("Models.Entities.User.User", "Users")
-                        .WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.Navigation("Users");
                 });
 
             modelBuilder.Entity("Models.Entities.Blog.Blog", b =>
