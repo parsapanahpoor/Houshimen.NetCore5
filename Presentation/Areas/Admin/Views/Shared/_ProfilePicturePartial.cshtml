@@ -1,14 +1,15 @@
-﻿
-@{
-//SideBarUserPanelViewModel user = _UserService.GetSideBarUserPanelData(User.Identity.Name);
-}
+﻿@using DataAccess.Design_Pattern.Repositories
+@using DataAccess.Design_Pattern.UnitOfWork
+@inject IUnitOfWork _UserService
+@using DataAccess.ViewModels
+@{ SideBarUserPanelViewModel user = _UserService.userRepository.GetSideBarUserPanelData(User.Identity.Name); }
 
 <!-- Sidebar user panel (optional) -->
 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
     <div class="image">
-        @*<img src="/UserAvatar/@user.ImageName" style="height:85px;width:85px;" class="img-circle elevation-2" alt="User Image">*@
+        <img src="/Images/UserAvatar/@user.ImageName" style="height:85px;width:85px;" class="img-circle elevation-2" alt="User Image">
     </div>
     <div class="info">
-        @*<a href="#" style="margin-top:20px;" class="d-block">@user.UserName</a>*@
+        <a href="#" style="margin-top:20px;" class="d-block">@user.UserName</a>
     </div>
 </div>

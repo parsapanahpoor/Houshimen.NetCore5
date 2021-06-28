@@ -46,9 +46,65 @@ namespace DataAccess.Design_Pattern.Repositories.Classes
             Add(employee);
         }
 
+        public void DeleteEmployee(Employee employee)
+        {
+            employee.IsDelete = true;
+            if (employee.UserAvatar != "no-photo.png")
+            {
+                string deleteimagePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/Images/UserAvatar", employee.UserAvatar);
+                if (File.Exists(deleteimagePath))
+                {
+                    File.Delete(deleteimagePath);
+                }
+
+
+            }
+
+            Update(employee);
+        }
+
         public List<Employee> GetAllkEmployees()
         {
             return GetAll().ToList();
         }
+
+        public Employee GetEmployeeById(int id)
+        {
+            return GetById(id);
+        }
+
+        public void UpdateEmployee(Employee employee, IFormFile imgBlogUp)
+        {
+            if (imgBlogUp != null && imgBlogUp.IsImage())
+            {
+
+                if (employee.UserAvatar != "no-photo.png")
+                {
+                    string deleteimagePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/Images/UserAvatar", employee.UserAvatar);
+                    if (File.Exists(deleteimagePath))
+                    {
+                        File.Delete(deleteimagePath);
+                    }
+
+                   
+                }
+
+
+
+                employee.UserAvatar = NameGenerator.GenerateUniqCode() + Path.GetExtension(imgBlogUp.FileName);
+                string imagePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/Images/UserAvatar", employee.UserAvatar);
+
+                using (var stream = new FileStream(imagePath, FileMode.Create))
+                {
+                    imgBlogUp.CopyTo(stream);
+                }
+
+            
+            }
+
+
+            Update(employee);
+        }
+
     }
 }

@@ -1,4 +1,5 @@
 ﻿using DataAccess.Design_Pattern.GnericRepositories;
+using DataAccess.ViewModels;
 using Models.Entities.User;
 using System;
 using System.Collections.Generic;
@@ -15,6 +16,7 @@ namespace DataAccess.Design_Pattern.Repositories
         bool IsExistEmail(string email);
         bool IsExistPhoneNumber(string phonenumber);
         string GetUserByUserName(string username);
+        SideBarUserPanelViewModel GetSideBarUserPanelData(string username);
 
 
     }

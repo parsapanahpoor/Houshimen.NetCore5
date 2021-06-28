@@ -14,6 +14,9 @@ namespace DataAccess.Design_Pattern.Repositories.Intrefaces
 
         List<Models.Entities.Employee.Employee> GetAllkEmployees();
         void AddEmployees(Models.Entities.Employee.Employee employee, IFormFile imgBlogUp);
+        Models.Entities.Employee.Employee GetEmployeeById(int id);
+        void UpdateEmployee(Models.Entities.Employee.Employee employee, IFormFile imgBlogUp);
+        void DeleteEmployee(Models.Entities.Employee.Employee employee);
 
 
     }

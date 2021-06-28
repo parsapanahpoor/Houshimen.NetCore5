@@ -51,5 +51,54 @@ namespace Presentation.Areas.Admin.Controllers
             }
             return View(employee);
         }
+
+        public IActionResult Edit(int? id , bool Delete = false)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var employee = _context.employeeRepository.GetEmployeeById((int)id);
+            if (employee == null)
+            {
+                return NotFound();
+            }
+            if (Delete == true)
+            {
+                ViewData["Delete"] = true;
+            }
+            return View(employee);
+        }
+
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Edit(int id,  Employee employee, IFormFile imgBlogUp)
+        {
+            if (id != employee.EmployeeId)
+            {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+
+                _context.employeeRepository.UpdateEmployee(employee, imgBlogUp);
+                _context.SaveChangesDB();
+                return Redirect("/Admin/Employees/Index?Edit=true");
+            }
+            return View(employee);
+        }
+
+        public IActionResult Delete(int id)
+        {
+            var employee = _context.employeeRepository.GetEmployeeById(id);
+            _context.employeeRepository.DeleteEmployee(employee);
+            _context.SaveChangesDB();
+
+            return Redirect("/Admin/Employees/Index?Delete=true");
+        }
+
     }
 }

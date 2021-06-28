@@ -1,4 +1,5 @@
 ﻿using DataAccess.Design_Pattern.GnericRepositories;
+using DataAccess.ViewModels;
 using DataContext;
 using Models.Entities.User;
 using System;
@@ -16,6 +17,17 @@ namespace DataAccess.Design_Pattern.Repositories.Classes
         public UserRepository(HoushimenContext db) : base(db)
         {
             _db = db;
+        }
+
+        public SideBarUserPanelViewModel GetSideBarUserPanelData(string username)
+        {
+            return GetAll().Where(p => p.UserName == username).Select(p => new SideBarUserPanelViewModel()
+            {
+
+                UserName = p.UserName,
+                ImageName = p.UserAvatar
+
+            }).Single();
         }
 
         public string GetUserByUserName(string username)
