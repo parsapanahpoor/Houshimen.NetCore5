@@ -26,9 +26,11 @@
     </div>
     <!-- /.card -->
 </div>
-                <script>// Your delay in milliseconds
-            var delay = 5000;
-            setTimeout(function () { document.getElementById("CreateBtn").click(); }, delay);</script>}
+                <script>
+                    // Your delay in milliseconds
+                    var delay = 5000;
+                    setTimeout(function () { document.getElementById("CreateBtn").click(); }, delay);
+                </script>}
     @if (ViewBag.Edit == true)
     {
 <div class="col-md-5">
@@ -51,9 +53,11 @@
     </div>
     <!-- /.card -->
 </div>
-                <script>// Your delay in milliseconds
-            var delay = 5000;
-            setTimeout(function () { document.getElementById("EditBtn").click(); }, delay);</script>}
+                <script>
+                    // Your delay in milliseconds
+                    var delay = 5000;
+                    setTimeout(function () { document.getElementById("EditBtn").click(); }, delay);
+                </script>}
     @if (ViewBag.Delete == true)
     {
 <div class="col-md-5">
@@ -76,9 +80,11 @@
     </div>
     <!-- /.card -->
 </div>
-                <script>// Your delay in milliseconds
-            var delay = 5000;
-            setTimeout(function () { document.getElementById("DeleteBtn").click(); }, delay);</script>}
+                <script>
+                    // Your delay in milliseconds
+                    var delay = 5000;
+                    setTimeout(function () { document.getElementById("DeleteBtn").click(); }, delay);
+                </script>}
     <!-- Content Header (Page header) -->
     <section class="content-header">
         <div class="container-fluid">
@@ -104,7 +110,7 @@
 
                 <div class="card ">
                     <div class="card-header">
-                        <h3 class="card-title">لیست کارمندها  جستجوی پیشرفته</h3>
+                        <h3 class="card-title">لیست کارمند   ها  جستجوی پیشرفته</h3>
                         <div class="card-tools">
                             <div class="input-group input-group-sm" style="width: 150px;">
                                 <a href="/Admin/Employees/Create" class="btn btn-block btn-primary btn-sm waves-effect">افزودن کارمند   جدید   </a>
@@ -132,7 +138,7 @@
                                         {
                             <tr role="row" class="odd">
                                 <td class="sorting_1">
-                                    <img src="/Images/UserAvatar/@item.UserAvatar" style="height:150px;width:200px" class="thumbnail" />
+                                    <img src="/Images/UserAvatar/@item.UserAvatar" class="thumbnail" style="height:150px;width:250px;" />
                                 </td>
 
                                 <td>
@@ -196,7 +202,8 @@
     <!-- AdminLTE App -->
     <!-- AdminLTE for demo purposes -->
     <!-- page script -->
-    <script>$(function () {
+    <script>
+        $(function () {
             $("#example1").DataTable({
                 "language": {
                     "paginate": {
@@ -220,6 +227,7 @@
                 "ordering": true,
                 "autoWidth": false
             });
-        });</script>
+        });
+    </script>
 }
 

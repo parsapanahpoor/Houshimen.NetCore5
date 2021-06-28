@@ -69,7 +69,15 @@ namespace DataContext
             modelBuilder.Entity<BlogCategory>()
                 .HasQueryFilter(u => !u.IsDelete);
 
+            modelBuilder.Entity<User>()
+             .HasQueryFilter(u => !u.IsDelete);
 
+            modelBuilder.Entity <Blog>()
+             .HasQueryFilter(u => !u.IsDelete);
+
+
+            modelBuilder.Entity<BlogCategory>()
+             .HasQueryFilter(u => !u.IsDelete);
 
             base.OnModelCreating(modelBuilder);
         }
