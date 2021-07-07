@@ -41,13 +41,13 @@ namespace Models.Entities.User
         //public virtual List<UserRole> UserRoles { get; set; }
         public virtual List<Blog.Blog> Blogs { get; set; }
         public virtual List<Blog.Video> Video { get; set; }
-        //public virtual List<Product.Product> Product { get; set; }
+        public virtual List<Product.Product> Product { get; set; }
 
         public virtual List<Models.Entities.Comment.Comment> Comments { get; set; }
-        //public virtual List<Models.Entites.Slider.Slider> Sliders { get; set; }
+        public virtual List<Models.Entities.Slider.Slider> Sliders { get; set; }
 
         #endregion
 
     }
-    
+
 }

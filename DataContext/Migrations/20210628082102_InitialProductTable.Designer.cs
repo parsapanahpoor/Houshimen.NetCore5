@@ -4,14 +4,16 @@ using DataContext;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace DataContext.Migrations
 {
     [DbContext(typeof(HoushimenContext))]
-    partial class HoushimenContextModelSnapshot : ModelSnapshot
+    [Migration("20210628082102_InitialProductTable")]
+    partial class InitialProductTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -401,8 +403,6 @@ namespace DataContext.Migrations
 
                     b.HasIndex("ProductID");
 
-                    b.HasIndex("ProductTypeId");
-
                     b.HasIndex("UsersId");
 
                     b.HasIndex("VideoId");
@@ -490,11 +490,6 @@ namespace DataContext.Migrations
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<string>("ProductCode")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
-
                     b.Property<int>("ProductCount")
                         .HasColumnType("int");
 
@@ -527,127 +522,6 @@ namespace DataContext.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("Products");
-                });
-
-            modelBuilder.Entity("Models.Entities.Product.ProductCategories", b =>
-                {
-                    b.Property<int>("ProductCategoryId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("CategoryTitle")
-                        .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
-
-                    b.Property<bool>("IsDelete")
-                        .HasColumnType("bit");
-
-                    b.Property<int?>("ParentId")
-                        .HasColumnType("int");
-
-                    b.HasKey("ProductCategoryId");
-
-                    b.ToTable("ProductCategories");
-                });
-
-            modelBuilder.Entity("Models.Entities.Product.ProductFeature", b =>
-                {
-                    b.Property<int>("FeatureID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("FeatureTitle")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("FeatureValue")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("ProductID")
-                        .HasColumnType("int");
-
-                    b.HasKey("FeatureID");
-
-                    b.HasIndex("ProductID");
-
-                    b.ToTable("ProductFeature");
-                });
-
-            modelBuilder.Entity("Models.Entities.Product.ProductGallery", b =>
-                {
-                    b.Property<int>("ProductGalleryId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("ImageName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("ProductID")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Title")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("ProductGalleryId");
-
-                    b.HasIndex("ProductID");
-
-                    b.ToTable("ProductGallery");
-                });
-
-            modelBuilder.Entity("Models.Entities.Product.ProductSelectedCategory", b =>
-                {
-                    b.Property<int>("ProductSelectedCategoryID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<int?>("ProductCategoriesProductCategoryId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("ProductCategoryId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("ProductID")
-                        .HasColumnType("int");
-
-                    b.HasKey("ProductSelectedCategoryID");
-
-                    b.HasIndex("ProductCategoriesProductCategoryId");
-
-                    b.HasIndex("ProductID");
-
-                    b.ToTable("ProductSelectedCategory");
-                });
-
-            modelBuilder.Entity("Models.Entities.Product.WholeSaleOff", b =>
-                {
-                    b.Property<int>("WholeSaleId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<int>("ProductID")
-                        .HasColumnType("int");
-
-                    b.Property<int>("WholeSaleCount")
-                        .HasColumnType("int");
-
-                    b.Property<int>("WholeSaleOffPercent")
-                        .HasColumnType("int");
-
-                    b.HasKey("WholeSaleId");
-
-                    b.HasIndex("ProductID");
-
-                    b.ToTable("WholeSaleOff");
                 });
 
             modelBuilder.Entity("Models.Entities.Slider.Slider", b =>
@@ -911,12 +785,6 @@ namespace DataContext.Migrations
                         .WithMany("Comments")
                         .HasForeignKey("ProductID");
 
-                    b.HasOne("Models.Entites.Comment.ProductType", "ProductType")
-                        .WithMany()
-                        .HasForeignKey("ProductTypeId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
                     b.HasOne("Models.Entities.User.User", "Users")
                         .WithMany("Comments")
                         .HasForeignKey("UsersId");
@@ -927,8 +795,6 @@ namespace DataContext.Migrations
 
                     b.Navigation("Blog");
 
-                    b.Navigation("ProductType");
-
                     b.Navigation("Users");
 
                     b.Navigation("Video");
@@ -937,7 +803,7 @@ namespace DataContext.Migrations
             modelBuilder.Entity("Models.Entities.Product.Product", b =>
                 {
                     b.HasOne("Models.Entities.User.User", "Users")
-                        .WithMany("Product")
+                        .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
@@ -945,60 +811,10 @@ namespace DataContext.Migrations
                     b.Navigation("Users");
                 });
 
-            modelBuilder.Entity("Models.Entities.Product.ProductFeature", b =>
-                {
-                    b.HasOne("Models.Entities.Product.Product", "Product")
-                        .WithMany()
-                        .HasForeignKey("ProductID")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.Navigation("Product");
-                });
-
-            modelBuilder.Entity("Models.Entities.Product.ProductGallery", b =>
-                {
-                    b.HasOne("Models.Entities.Product.Product", "Product")
-                        .WithMany()
-                        .HasForeignKey("ProductID")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.Navigation("Product");
-                });
-
-            modelBuilder.Entity("Models.Entities.Product.ProductSelectedCategory", b =>
-                {
-                    b.HasOne("Models.Entities.Product.ProductCategories", "ProductCategories")
-                        .WithMany()
-                        .HasForeignKey("ProductCategoriesProductCategoryId");
-
-                    b.HasOne("Models.Entities.Product.Product", "Product")
-                        .WithMany()
-                        .HasForeignKey("ProductID")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.Navigation("Product");
-
-                    b.Navigation("ProductCategories");
-                });
-
-            modelBuilder.Entity("Models.Entities.Product.WholeSaleOff", b =>
-                {
-                    b.HasOne("Models.Entities.Product.Product", "product")
-                        .WithMany("WholeSaleOff")
-                        .HasForeignKey("ProductID")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.Navigation("product");
-                });
-
             modelBuilder.Entity("Models.Entities.Slider.Slider", b =>
                 {
                     b.HasOne("Models.Entities.User.User", "Users")
-                        .WithMany("Sliders")
+                        .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
@@ -1035,8 +851,6 @@ namespace DataContext.Migrations
             modelBuilder.Entity("Models.Entities.Product.Product", b =>
                 {
                     b.Navigation("Comments");
-
-                    b.Navigation("WholeSaleOff");
                 });
 
             modelBuilder.Entity("Models.Entities.User.User", b =>
@@ -1044,10 +858,6 @@ namespace DataContext.Migrations
                     b.Navigation("Blogs");
 
                     b.Navigation("Comments");
-
-                    b.Navigation("Product");
-
-                    b.Navigation("Sliders");
 
                     b.Navigation("Video");
                 });

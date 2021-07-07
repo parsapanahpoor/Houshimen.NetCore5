@@ -4,14 +4,16 @@ using DataContext;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace DataContext.Migrations
 {
     [DbContext(typeof(HoushimenContext))]
-    partial class HoushimenContextModelSnapshot : ModelSnapshot
+    [Migration("20210628084836_InitialFeatureProducts")]
+    partial class InitialFeatureProducts
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -490,11 +492,6 @@ namespace DataContext.Migrations
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<string>("ProductCode")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
-
                     b.Property<int>("ProductCount")
                         .HasColumnType("int");
 
@@ -625,29 +622,6 @@ namespace DataContext.Migrations
                     b.HasIndex("ProductID");
 
                     b.ToTable("ProductSelectedCategory");
-                });
-
-            modelBuilder.Entity("Models.Entities.Product.WholeSaleOff", b =>
-                {
-                    b.Property<int>("WholeSaleId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<int>("ProductID")
-                        .HasColumnType("int");
-
-                    b.Property<int>("WholeSaleCount")
-                        .HasColumnType("int");
-
-                    b.Property<int>("WholeSaleOffPercent")
-                        .HasColumnType("int");
-
-                    b.HasKey("WholeSaleId");
-
-                    b.HasIndex("ProductID");
-
-                    b.ToTable("WholeSaleOff");
                 });
 
             modelBuilder.Entity("Models.Entities.Slider.Slider", b =>
@@ -984,17 +958,6 @@ namespace DataContext.Migrations
                     b.Navigation("ProductCategories");
                 });
 
-            modelBuilder.Entity("Models.Entities.Product.WholeSaleOff", b =>
-                {
-                    b.HasOne("Models.Entities.Product.Product", "product")
-                        .WithMany("WholeSaleOff")
-                        .HasForeignKey("ProductID")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.Navigation("product");
-                });
-
             modelBuilder.Entity("Models.Entities.Slider.Slider", b =>
                 {
                     b.HasOne("Models.Entities.User.User", "Users")
@@ -1035,8 +998,6 @@ namespace DataContext.Migrations
             modelBuilder.Entity("Models.Entities.Product.Product", b =>
                 {
                     b.Navigation("Comments");
-
-                    b.Navigation("WholeSaleOff");
                 });
 
             modelBuilder.Entity("Models.Entities.User.User", b =>

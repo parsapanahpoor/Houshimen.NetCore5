@@ -23,6 +23,8 @@ namespace DataAccess.Design_Pattern.UnitOfWork
          VideosSelectedCategoryRepository videosSelectedCategory { get; }
          SliderRepository sliderRepository { get; }
          EmployeeRepository employeeRepository { get; }
+         ProductRepository productRepository { get; }
+         WholeSaleOffRepository wholeSaleOffRepository { get; }
 
         #endregion
 

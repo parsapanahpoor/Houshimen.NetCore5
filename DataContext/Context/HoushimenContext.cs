@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Models.Entities.Blog;
 using Models.Entities.Employee;
+using Models.Entities.Product;
 using Models.Entities.Slider;
 using Models.Entities.User;
 using System;
@@ -50,6 +51,17 @@ namespace DataContext
 
         #endregion
 
+        #region Product
+
+        public DbSet<Product> Products { get; set; }
+        public DbSet<ProductCategories> ProductCategories { get; set; }
+        public DbSet<ProductFeature> ProductFeature { get; set; }
+        public DbSet<ProductGallery> ProductGallery { get; set; }
+        public DbSet<ProductSelectedCategory> ProductSelectedCategory { get; set; }
+        public DbSet<WholeSaleOff> WholeSaleOff { get; set; }
+
+        #endregion
+
         #region OnModelCreating
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -80,6 +92,10 @@ namespace DataContext
              .HasQueryFilter(u => !u.IsDelete);
 
             modelBuilder.Entity<Employee>()
+             .HasQueryFilter(u => !u.IsDelete);
+
+
+            modelBuilder.Entity<Product>()
              .HasQueryFilter(u => !u.IsDelete);
 
             base.OnModelCreating(modelBuilder);
